@@ -1,0 +1,78 @@
+/* AI'm by VNS — Global CSS · AI Dark Brutalist */
+/* Brand Identity v1.0 — Oswald 700 + Inter 700/400 */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:      #080808;
+  --bg-2:    #0d0d0d;
+  --bg-3:    #0f0f0f;
+  --line:    #141414;
+  --recede:  #1A1A1A;
+  --recede2: #1f1f1f;
+  --gold:    #A0782A;
+  --white:   #ffffff;
+  --muted:   #555555;
+  --muted2:  #444444;
+
+  --font-display: 'Oswald', 'Helvetica Neue', sans-serif;
+  --font-ui:      'Inter', system-ui, sans-serif;
+
+  --container: 1440px;
+  --pad:       clamp(24px, 4vw, 64px);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; max-width: 100%; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.label--gold { color: var(--gold); }
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  width: 100%;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
