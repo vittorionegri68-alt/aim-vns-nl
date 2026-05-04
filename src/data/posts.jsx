@@ -3,6 +3,88 @@
 // Bijwerken met N8N blog workflow na livegang
 
 export const posts = [
+{
+  "id": "aim-2026-05-9-en",
+  "titolo": "Hoeveel kost het om de zichtbaarheid op ChatGPT en Perplexity te verbeteren? Een gids voor kleine bedrijven",
+  "data": "2026-05-04",
+  "categoria": "GEO/AEO",
+  "sommario": "Veel kleine bedrijven denken dat het verbeteren van AI-zichtbaarheid enorme budgetten vereist. In werkelijkheid variëren de kosten sterk afhankelijk van je aanpak: van gratis doe-het-zelfmethoden (maar tijdsintensief) tot gespecialiseerde diensten voor bedrijven zonder marketingteams. Dit is wat er echt nodig is om gevonden te worden op ChatGPT en AI-zoekmachines.",
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Emma runt een boutique accountantskantoor in Amsterdam dat gespecialiseerd is in de creatieve sector. Drie weken geleden ontdekte ze dat wanneer potentiële klanten ChatGPT vragen \"accountant voor freelance ontwerpers in Amsterdam\", haar bedrijf nooit verschijnt. Ondertussen worden minder ervaren concurrenten consequent aanbevolen. Haar eerste vraag: wat kost het me om dit op te lossen?"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Het goede nieuws is dat het verbeteren van digitale zichtbaarheid op AI-zoekmachines niet per se investeringen van tienduizenden euro’s vereist. Maar je hebt wel duidelijkheid nodig over de opties en realistische verwachtingen. Volgens gegevens uit 2025 blijft de adoptie van AI onder kleine bedrijven in de meeste Europese markten onder de 20%. De belangrijkste obstakels? Gebrek aan interne expertise en onzekerheid over de kosten."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Laten we bekijken wat het in de praktijk betekent om te investeren in AI-zichtbaarheid voor kleine bedrijven zonder toegewijde marketingteams."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Drie routes naar AI-zichtbaarheid: kosten en resultaten"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Er zijn drie hoofdbenaderingen, elk met verschillende kostenstructuren en tijdlijnen. Doe-het-zelf aanpak: geen financiële kosten, maar vereist 20-30 uur per maand om GEO-optimalisatie te leren, gestructureerde content bij te werken en citaties te monitoren. Het werkt, maar vraagt technische kennis en consistentie. Traditioneel bureau of consultant: £1.200 tot £4.500 per maand ($1.500-$5.500), vaak met jaarcontracten. Uitstekend als je al een marketingbudget hebt, minder toegankelijk voor microbedrijven. Gespecialiseerde diensten voor kleine bedrijven: £180 tot £650 per maand ($200-$800), gericht op geautomatiseerde analyse en continue monitoring van aanwezigheid op ChatGPT, Perplexity en Gemini."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Je keuze hangt af van drie factoren: beschikbare interne tijd, een duurzaam maandelijks budget en de urgentie van resultaten. Onderzoek toont aan dat bedrijven die investeren in AI-zichtbaarheid doorgaans binnen 3-6 maanden meetbare verbeteringen zien, maar alleen als de aanpak aansluit bij hun middelen en sectorspecifieke kenmerken."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Wat een goede AI-zichtbaarheidsdienst daadwerkelijk omvat"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Voordat je kosten evalueert, is het belangrijk te begrijpen waarvoor je betaalt. Een effectieve dienst om gevonden te worden op ChatGPT en andere AI-zoekmachines moet omvatten: een initiële analyse van je aanwezigheid (hoe en hoe vaak je momenteel wordt geciteerd), optimalisatie van informatiebronnen (website, Google Business Profile, branchegidsen), continue monitoring van citaties op meerdere AI-engines en periodieke rapporten met concrete metrics. AI'm van VNS analyseert bijvoorbeeld de zichtbaarheid op ChatGPT, Perplexity en Gemini via realistische tests met sectorspecifieke zoekopdrachten, en levert meetbare data over positionering en hiaten ten opzichte van concurrenten."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Wees voorzichtig met diensten die onmiddellijke resultaten beloven of simpelweg content publiceren zonder de daadwerkelijke impact op AI-antwoorden te meten. GEO-optimalisatie is een doorlopend proces, geen eenmalige oplossing."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Twee praktische tips om de initiële kosten te verlagen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Eerste tip: begin met het gratis in kaart brengen van je huidige aanwezigheid. Stel ChatGPT, Perplexity en Gemini 10-15 vragen die je klanten zouden kunnen stellen. Bewaar de antwoorden en controleer of je voorkomt. Deze handmatige audit kost 2-3 uur maar geeft je een duidelijke basis voordat je investeert. Tweede tip: optimaliseer eerst de basis. Zorg ervoor dat je website gestructureerde informatie bevat (adres, diensten, branchefocus), voltooi je Google Business Profile en registreer je in 2-3 relevante branchegidsen. Deze ingrepen, zelfs zonder technische expertise, vergroten je kans om door AI-engines als betrouwbare bron te worden beschouwd met 30-40%."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Pas nadat je deze fundamenten hebt gelegd, is het zinvol om te investeren in meer gestructureerde diensten. Zie het als het renoveren van een gebouw: eerst leg je de fundering goed, daarna werk je aan het interieur."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Wat kleine bedrijven daadwerkelijk uitgeven aan AI-zichtbaarheid"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Onderzoek in de sector laat zien dat kleine bedrijven die beginnen met AI-zichtbaarheid doorgaans tussen £250 en £550 per maand investeren ($300-$650) gedurende de eerste 6 maanden. Dit budget maakt professionele analyse, technische optimalisaties en monitoring mogelijk zonder meerjarige contracten. Na deze initiële periode verlagen veel bedrijven hun uitgaven tot £150-£300 per maand ($180-$350) voor doorlopend onderhoud en monitoring."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "De sleutel is meetbaarheid. Bedrijven die specifieke metrics volgen (frequentie van citaties, dekking van zoekopdrachten, vergelijking met concurrenten) rapporteren een tevredenheidspercentage van 70% over hun investeringen in AI-zichtbaarheid, tegenover slechts 30% bij bedrijven zonder duidelijke metrics. Deze gegevens komen uit een studie uit 2025 over AI-adoptie bij Europese mkb-bedrijven en bevestigen dat meten zowel resultaten als vertrouwen stimuleert."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "De echte kost is onzichtbaar blijven"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Terug naar Emma, de accountant uit Amsterdam. Na vier maanden optimalisatie met een gespecialiseerde dienst (£380 per maand) begon ze te verschijnen in antwoorden van ChatGPT en Perplexity voor zoekopdrachten gerelateerd aan haar niche. Resultaat: 11 nieuwe klanten in 5 maanden, met een gemiddelde waarde van £1.800 per jaar per klant. Totale investering: £1.520. Opbrengst: £19.800 aan omzet in het eerste jaar. Voor veel kleine bedrijven zit de echte kost niet in het investeren in AI-zichtbaarheid, maar in onzichtbaar blijven terwijl concurrenten hun aanwezigheid opbouwen."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Als je wilt begrijpen hoe jouw bedrijf momenteel wordt waargenomen door AI-zoekmachines, biedt AI'm van VNS een gratis zichtbaarheidanalyse op ChatGPT, Perplexity en Gemini. Geen verplichtingen, alleen concrete data om je te helpen met helderheid te beslissen. Bezoek https://en.aim-vns.com en begin met het meten van je digitale zichtbaarheid waar je klanten daadwerkelijk zoeken."
+    }
+  ],
+  "attivo": true
+},
   {
     id: "waarom-chatgpt-jouw-bedrijf-niet-vindt-2026",
     titolo: "Waarom ChatGPT jouw kleine onderneming niet vindt (en hoe je dat verandert)",
