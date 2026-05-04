@@ -40,7 +40,7 @@ export const config = {
     ogImage: "/og-image.jpg",
   },
   ga4: {
-    id: "G-TEST123", // vervangen door echte ID voor livegang
+    id: "G-Y73KX5Z2DJ", // vervangen door echte ID voor livegang
   },
   design: {
     colors: {
