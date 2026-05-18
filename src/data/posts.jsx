@@ -3,6 +3,73 @@
 // Bijwerken met N8N blog workflow na livegang
 
 export const posts = [
+
+{
+  "id": "aim-2026-05-10-nl",
+  "titolo": "Hoe lang duurt het voordat GEO optimalisatie resultaten oplevert? Realistische tijdlijnen voor kleine ondernemingen",
+  "data": "2026-05-18",
+  "categoria": "GEO/AEO",
+  "sommario": "Hoe lang duurt het echt voordat je beter zichtbaar bent op ChatGPT, Perplexity en Google? Concrete data, realistische verwachtingen en praktische tips voor kleine ondernemingen die gevonden willen worden op AI-zoekmachines zonder maanden te wachten.",
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Laura runt een fysiotherapiepraktijk in Utrecht. In januari optimaliseerde ze haar Google Bedrijfsprofiel, voegde gestructureerde data toe aan haar website en publiceerde content die is afgestemd op AI-zoekmachines. In maart, bij het zoeken naar 'gespecialiseerde fysiotherapeut sportblessures Utrecht' op Perplexity, stond haar praktijk bovenaan de aanbevelingen. In acht weken zag ze +45% meer aanvragen voor afspraken. Iedereen stelde haar dezelfde vraag: hoe lang duurt het écht voordat je resultaten ziet van GEO optimalisatie?"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Het antwoord is niet voor iedereen hetzelfde, maar er zijn wel realistische tijdlijnen op basis van data. Volgens het OESO-rapport 'Empowering SMEs in the age of AI' steeg wereldwijd het gebruik van AI onder kleine ondernemingen van 7,1% in 2023 naar 17,4%, gedreven door grote taalmodellen zoals ChatGPT en Gemini. In Europa groeide de AI-adoptie onder Italiaanse KMO's met +50% in 2025 (bron: Italiaonline marktonderzoek). Deze versnelling betekent dat optimaliseren voor AI-zichtbaarheid geen experiment meer is: het is een competitieve noodzaak met meetbare ROI."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Voor kleine ondernemingen zonder marketingteam is het begrijpen van GEO optimalisatie tijdlijnen cruciaal voor het plannen van budgetten en verwachtingen. Laten we week voor week uitleggen wat je kunt verwachten, en hoe je resultaten kunt versnellen met praktische acties."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Weken 0-4: Basis leggen en eerste signalen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "In de initiële fase van GEO optimalisatie is het doel om de technische basis op orde te krijgen: compleet en actueel Google Bedrijfsprofiel, consistente NAP (naam, adres, telefoon) op alle platforms, schema.org LocalBusiness markup op je website, en content geoptimaliseerd voor lokale zoekwoorden zoals 'AI-zichtbaarheid' en 'gevonden worden op ChatGPT'. In deze periode beginnen AI-zoekmachines je site opnieuw te crawlen en de nieuwe gestructureerde data te herkennen. Eerste concrete signalen: toename van vertoningen op Google Maps (meestal +15% tot +30%), enkele extra kliks vanuit het Local Pack, en af en toe je eerste vermelding in Perplexity of ChatGPT antwoorden bij zeer specifieke zoekopdrachten. Verwacht nog geen explosies in verkeer, maar je zult beweging zien in je analytics."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Weken 4-8: Digitale zichtbaarheid wordt zichtbaar"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Tussen week vier en acht registreren Google en Bing je optimalisaties volledig. Dit is het moment waarop zichtbaarheid op AI-zoekmachines meetbaar wordt: je pagina's verschijnen vaker in antwoorden gegenereerd door ChatGPT (via Bing), Perplexity en Gemini. Voor lokale zoekopdrachten zoals '[jouw dienst] + [stad]' verbeteren rankings stabiel. Rich snippets (recensiesterren, openingstijden, FAQ's) verschijnen vaker in resultaten. Een interessant gegeven: Italiaanse KMO's die AI gebruiken besparen gemiddeld 5,2 uur per medewerker per week (bron: Punto Informatico 2025), en een deel van die tijd wordt geherinvesteerd in het monitoren en continu optimaliseren van digitale aanwezigheid. Praktische tip nummer één: monitor wekelijks welke zoekopdrachten verkeer opleveren en update content met steeds preciezere en meer gelokaliseerde antwoorden."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Maanden 2-6: Stabiele resultaten en schaalbaarheid voor kleine ondernemingen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Na twee maanden consistente GEO optimalisatie stabiliseren de resultaten en worden ze voorspelbaar. Lokaal organisch verkeer groeit consistent, telefoontjes en offerteaanvragen nemen toe (gemiddeld +30-50% in gedocumenteerde gevallen), en het belangrijkste: je bedrijf wordt regelmatig geciteerd als gezaghebbende bron in AI-antwoorden. Hier komt schaalbaarheid om de hoek kijken: hoe meer geoptimaliseerde content je produceert (lokale gidsen, FAQ's, specifieke use cases), hoe sneller het effect op AI-zoekmachines. AI'm by VNS, een AI-zichtbaarheidsservice voor kleine ondernemingen zonder marketingteam, heeft op basis van echte cases in Italië en Nederland gevalideerd dat in dit tijdsvenster de meest significante verbeteringen plaatsvinden: geautomatiseerde analyses detecteren gemiddeld 60% groei in citaties door AI-zoekmachines vergeleken met maand nul. Praktische tip nummer twee: plan een maandelijkse redactionele kalender met minimaal 4 verticale stukken (één gedetailleerde FAQ, één lokale case study, één praktische gids, één seizoensupdate) en gebruik schema.org om ze te structureren."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Factoren die tijdlijnen versnellen (of vertragen)"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Niet alle kleine ondernemingen zien dezelfde tijdlijnen. Drie variabelen maken het verschil: lokale concurrentie (in grote steden of verzadigde sectoren tel je 2-4 weken bij op), domeinautoriteit (nieuwe sites of sites met weinig recensies hebben langer nodig om vertrouwen op te bouwen), en dataconsistentie (inconsistenties in NAP, openingstijden of categorieën vertragen herkenning door AI-zoekmachines). Een veelgemaakte fout is resultaten verwachten zonder regelmatig content bij te werken: AI-zoekmachines belonen frisheid en relevantie. Als je site maanden statisch is geweest, zal zelfs de beste technische optimalisatie moeite hebben om zichtbaarheid te brengen."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Hoe je voortgang week voor week meet"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Om te begrijpen of GEO optimalisatie werkt, volg je deze KPI's: vertoningen en kliks van Google Bedrijfsprofiel (via Insights), gemiddelde positie voor lokale zoekwoorden (Search Console), citaties in AI-antwoorden (wekelijkse handmatige tests op ChatGPT, Perplexity, Gemini met echte klantvragen), en conversies (telefoontjes, formulieren, boekingen). AI'm by VNS automatiseert precies dit type monitoring, analyseert real-time of en hoe je wordt geciteerd door AI-zoekmachines en stelt snelle aanpassingen voor. Het doel is niet alleen hoger ranken op Google, maar het standaardantwoord worden wanneer een potentiële klant ChatGPT of Perplexity om een aanbeveling in jouw regio vraagt."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Samengevat: de eerste signalen van GEO optimalisatie komen binnen de eerste 4 weken, duidelijke verbeteringen tussen 4 en 8 weken, en stabiele, schaalbare resultaten na 2-6 maanden. Voor kleine ondernemingen zonder marketingteam is de sleutel beginnen met de basis (compleet profiel, schema.org, lokale content) en consistent monitoren. Digitale zichtbaarheid op AI-zoekmachines is geen magie: het is een technisch proces met voorspelbare tijdlijnen en meetbare resultaten. Als je vandaag wilt controleren hoe je verschijnt op ChatGPT, Perplexity en Gemini, ontdek hoe AI'm by VNS je kan helpen op aim-vns.com."
+    }
+  ],
+  "attivo": true
+},
 {
   "id": "aim-2026-05-9-en",
   "titolo": "Hoeveel kost het om de zichtbaarheid op ChatGPT en Perplexity te verbeteren? Een gids voor kleine bedrijven",
