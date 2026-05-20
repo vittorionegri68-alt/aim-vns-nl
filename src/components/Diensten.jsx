@@ -143,7 +143,7 @@ export default function Servizi() {
                   color: '#444', marginTop: '4px', letterSpacing: '0.05em' }}>{p.prezzoSub}</div>
               </div>
 
-              <a href="#contact" style={{
+              <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener" style={{
                 fontFamily: "'Inter', sans-serif", fontWeight: 700,
                 fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase',
                 color: p.highlight ? '#080808' : '#ffffff',
