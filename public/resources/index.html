@@ -1,1 +1,516 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Resources — AI'm by VNS | Gratis gids AI-zichtbaarheid</title>
+  <meta name="description" content="Download de gratis gids over AI-zichtbaarheid voor kleine ondernemingen. Beschikbaar in het Nederlands, Engels en Italiaans. AI'm by VNS." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nl.aim-vns.com/resources" />
+
+  <link rel="alternate" hreflang="it" href="https://www.aim-vns.com/resources" />
+  <link rel="alternate" hreflang="en" href="https://en.aim-vns.com/resources" />
+  <link rel="alternate" hreflang="nl" href="https://nl.aim-vns.com/resources" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aim-vns.com/resources" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nl.aim-vns.com/resources" />
+  <meta property="og:title" content="Resources — AI'm by VNS" />
+  <meta property="og:description" content="Download de gratis gids: waarom jouw website onzichtbaar is voor AI-zoekmachines en hoe je dat oplost." />
+  <meta property="og:image" content="https://nl.aim-vns.com/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- GA4 cookieless -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y73KX5Z2DJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y73KX5Z2DJ', {
+      anonymize_ip: true,
+      client_storage: 'none',
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+    });
+  </script>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://nl.aim-vns.com/resources",
+    "name": "Resources — AI'm by VNS",
+    "description": "Gratis gids over AI-zichtbaarheid voor kleine ondernemingen. Beschikbaar in het Nederlands, Engels en Italiaans.",
+    "url": "https://nl.aim-vns.com/resources",
+    "inLanguage": ["nl", "en", "it"],
+    "publisher": {
+      "@type": "ProfessionalService",
+      "@id": "https://nl.aim-vns.com/#organization",
+      "name": "AI'm by VNS"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nl.aim-vns.com" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://nl.aim-vns.com/resources" }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #080808;
+      --dark:    #111111;
+      --gold:    #A0782A;
+      --gold-dim:#7a5a1f;
+      --paper:   #ffffff;
+      --muted:   #888888;
+      --border:  #1f1f1f;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--paper);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--black);
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--paper);
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-back {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--paper); }
+
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      text-align: center;
+    }
+
+    .hero-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #cccccc;
+      max-width: 580px;
+      margin: 0 auto 1rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 2.5rem auto;
+    }
+
+    .section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+
+    .section-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    .guide-card {
+      border: 1px solid var(--border);
+      background: var(--dark);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .guide-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .guide-number {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--gold);
+      opacity: 0.25;
+      line-height: 1;
+      flex-shrink: 0;
+      min-width: 2.5rem;
+    }
+
+    .guide-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold-dim);
+      padding: 0.2rem 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .guide-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.4rem;
+    }
+
+    .guide-subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .guide-desc {
+      font-size: 0.95rem;
+      color: #aaaaaa;
+      margin-bottom: 2rem;
+      border-left: 2px solid var(--border);
+      padding-left: 1rem;
+    }
+
+    .download-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.25rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-download:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .btn-download svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    .guide-card.coming-soon {
+      opacity: 0.45;
+      border-style: dashed;
+    }
+
+    .guide-card.coming-soon .guide-title { color: var(--muted); }
+
+    .coming-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .cta-block {
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      max-width: 860px;
+      margin: 1rem auto 0;
+    }
+
+    .cta-block h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.8rem;
+    }
+
+    .cta-block h2 span { color: var(--gold); }
+
+    .cta-block p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1rem 2rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover { opacity: 0.88; }
+
+    .cta-note {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--paper); }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.25rem; }
+      .hero { padding: 3rem 1.25rem 2rem; }
+      .section { padding: 0 1.25rem 3rem; }
+      .guide-card { padding: 1.5rem; }
+      .guide-card-header { flex-direction: column; gap: 0.75rem; }
+      .guide-number { font-size: 2rem; }
+      .cta-block { padding: 2.5rem 1.25rem; }
+      .download-row { flex-direction: column; }
+      .btn-download { justify-content: center; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero, .guide-card, .cta-block { animation: fadeUp 0.5s ease both; }
+    .guide-card:nth-child(2) { animation-delay: 0.1s; }
+    .guide-card:nth-child(3) { animation-delay: 0.2s; }
+    .cta-block { animation-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://nl.aim-vns.com" class="nav-logo">
+      <span>AI</span>'m by VNS
+    </a>
+    <a href="https://nl.aim-vns.com" class="nav-back">← Home</a>
+  </nav>
+
+  <section class="hero">
+    <p class="hero-label">Gratis Resources</p>
+    <h1>Gratis gidsen over<br><em>AI-zichtbaarheid</em><br>voor jouw bedrijf</h1>
+    <p>Download de gidsen in het Nederlands, Engels of Italiaans. Elke PDF is geschreven voor kleine ondernemers zonder marketingteam.</p>
+    <div class="divider"></div>
+  </section>
+
+  <section class="section">
+    <p class="section-label">Deel 1 van 3 — nu beschikbaar</p>
+
+    <div class="guide-card">
+      <div class="guide-card-header">
+        <div class="guide-number">01</div>
+        <div class="guide-meta">
+          <span class="guide-tag">Nu beschikbaar</span>
+          <h2 class="guide-title">Waarom jouw website onzichtbaar is voor AI-zoekmachines</h2>
+          <p class="guide-subtitle">De 5 fouten die jouw bedrijf onzichtbaar maken voor ChatGPT, Perplexity en Gemini</p>
+        </div>
+      </div>
+
+      <p class="guide-desc">
+        Je hebt een website, een Facebook-pagina, misschien wat Google-recensies. Maar als een klant aan ChatGPT vraagt naar de beste dienstverlener in jouw regio, ben jij niet het antwoord. Deze gids legt uit waarom dat zo is en wat je eraan kunt doen.
+      </p>
+
+      <div class="download-row">
+        <a class="btn-download"
+           href="/assets/pdf/ai-zichtbaarheid-gids-deel1-nl.pdf"
+           download
+           onclick="gtag('event', 'download_pdf', {pdf: 'deel1-nl'});">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download in het Nederlands
+        </a>
+        <a class="btn-download"
+           href="/assets/pdf/ai-visibility-guide-part1-en.pdf"
+           download
+           onclick="gtag('event', 'download_pdf', {pdf: 'part1-en'});">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download in English
+        </a>
+        <a class="btn-download"
+           href="/assets/pdf/guida-visibilita-ai-parte1-it.pdf"
+           download
+           onclick="gtag('event', 'download_pdf', {pdf: 'parte1-it'});">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Scarica in Italiano
+        </a>
+      </div>
+    </div>
+
+    <div class="guide-card coming-soon">
+      <div class="guide-card-header">
+        <div class="guide-number">02</div>
+        <div class="guide-meta">
+          <span class="coming-badge">Binnenkort</span>
+          <h2 class="guide-title">De complete technische checklist</h2>
+          <p class="guide-subtitle">De 5 bestanden die elke website moet hebben om gelezen te worden door AI-zoekmachines</p>
+        </div>
+      </div>
+      <p class="guide-desc">
+        schema.org, robots.txt, llms.txt, ai.txt, sitemap.xml. Wat ze zijn, hoe ze werken en hoe je controleert of jouw website ze correct geconfigureerd heeft. Volg @aimbyvns om te weten wanneer het verschijnt.
+      </p>
+    </div>
+
+    <div class="guide-card coming-soon">
+      <div class="guide-card-header">
+        <div class="guide-number">03</div>
+        <div class="guide-meta">
+          <span class="coming-badge">Binnenkort</span>
+          <h2 class="guide-title">Het echte geval: van onzichtbaar naar vindbaar</h2>
+          <p class="guide-subtitle">Hoe Casa Cavour in minder dan twee maanden in 5 van de 10 AI-zoekopdrachten verscheen</p>
+        </div>
+      </div>
+      <p class="guide-desc">
+        Echte data, GEO-scores voor en na, concrete acties. De volledige casestudy van een klein verblijf dat ophield afhankelijk te zijn van OTA's voor zijn online zichtbaarheid.
+      </p>
+    </div>
+
+  </section>
+
+  <div class="cta-block">
+    <h2>Wil je weten hoe je er <span>nu</span> voor staat?</h2>
+    <p>De baseline-analyse is gratis en duurt 30 minuten. Ontdek hoe vaak je verschijnt op ChatGPT, Perplexity en Gemini voor zoekopdrachten die relevant zijn voor jouw sector.</p>
+    <a class="btn-primary" href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      Plan je gratis analyse
+    </a>
+    <p class="cta-note">30 minuten · geen verplichtingen · Nederlands, Engels of Italiaans</p>
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2026 AI'm by VNS &mdash; Nijkerk, NL &mdash;
+      <a href="mailto:info@aim-vns.com">info@aim-vns.com</a> &mdash;
+      <a href="https://nl.aim-vns.com/privacy.html">Privacy</a>
+    </p>
+  </footer>
+
+  <noscript>
+    <div>
+      <h1>Resources — AI'm by VNS</h1>
+      <p>Download de gratis gids over AI-zichtbaarheid voor kleine ondernemingen. Beschikbaar in het Nederlands, Engels en Italiaans.</p>
+      <p>Download NL: /assets/pdf/ai-zichtbaarheid-gids-deel1-nl.pdf</p>
+      <p>Download EN: /assets/pdf/ai-visibility-guide-part1-en.pdf</p>
+      <p>Download IT: /assets/pdf/guida-visibilita-ai-parte1-it.pdf</p>
+      <p>Plan je gratis analyse: https://calendly.com/aim-vns-info/30min</p>
+    </div>
+  </noscript>
+
+</body>
+</html>
