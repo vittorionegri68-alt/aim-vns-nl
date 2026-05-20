@@ -50,7 +50,7 @@ export default function Hero() {
             </p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end' }}>
-            <a href="#contact" style={{
+            <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener" style={{
               fontFamily: "'Inter', sans-serif", fontWeight: 700,
               fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase',
               color: '#080808', background: '#A0782A',
