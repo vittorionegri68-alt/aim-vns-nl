@@ -33,7 +33,7 @@ export default function Nav() {
         display: 'flex', alignItems: 'center',
         justifyContent: 'space-between', height: '64px',
       }}>
-        <a ="#" style={{ display: 'flex', alignItems: 'baseline', gap: '8px', textDecoration: 'none' }}>
+        <a href="#" style={{ display: 'flex', alignItems: 'baseline', gap: '8px', textDecoration: 'none' }}>
           <span style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
             fontSize: '24px', letterSpacing: '0.04em', color: '#A0782A', textTransform: 'uppercase' }}>AI</span>
           <span style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
@@ -45,7 +45,7 @@ export default function Nav() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="nav-links-desktop">
           {links.map(l => (
-            <a key={l.} ={l.} style={{
+            <a key={l.href} href={l.href} style={{
               fontFamily: "'Inter', sans-serif", fontWeight: 700,
               fontSize: '11px', letterSpacing: '0.15em', color: '#555', textTransform: 'uppercase', transition: 'color 0.2s',
             }}
@@ -56,7 +56,7 @@ export default function Nav() {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <a ={config.brand.whatsapp} target="_blank" rel="noopener noreferrer"
+          <a href={config.brand.whatsapp} target="_blank" rel="noopener noreferrer"
             title="Stuur ons een WhatsApp-bericht"
             style={{ display: 'flex', alignItems: 'center', gap: '6px',
               fontFamily: "'Inter', sans-serif", fontWeight: 700,
@@ -70,7 +70,7 @@ export default function Nav() {
             <span className="whatsapp-label">WhatsApp</span>
           </a>
 
-          <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener" style={{
+          <a href="#contact" style={{
             fontFamily: "'Inter', sans-serif", fontWeight: 700,
             fontSize: '11px', letterSpacing: '0.12em', color: '#080808',
             textTransform: 'uppercase', background: '#A0782A',
