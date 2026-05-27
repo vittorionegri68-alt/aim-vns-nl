@@ -3,7 +3,88 @@
 // Bijwerken met N8N blog workflow na livegang
 
 export const posts = [
-
+{
+  "id": "aim-2026-05-1-nl",
+  "titolo": "Hoe kleine ondernemingen gevonden worden op ChatGPT: praktische gids voor AI-zichtbaarheid",
+  "data": "2026-05-27",
+  "categoria": "GEO/AEO",
+  "sommario": "ChatGPT en andere AI-zoekmachines veranderen hoe klanten kleine ondernemingen ontdekken. Deze gids legt uit hoe je digitale zichtbaarheid op AI-systemen verbetert zonder marketingteam, met praktische tips en actuele gegevens over AI-adoptie bij het MKB.",
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Sophie runt een ecologische tuinonderneming in Haarlem. Vorige maand kreeg ze vijf nieuwe aanvragen van klanten die ChatGPT hadden gevraagd naar 'duurzame tuinarchitect in de buurt'. Geen van hen had gegoogeld of haar website bezocht: de AI had simpelweg haar bedrijf aanbevolen in het antwoord. Hoe was dat mogelijk? En vooral: hoe kunnen andere kleine ondernemingen hetzelfde bereiken?"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Volgens recent onderzoek gebruikt inmiddels 79% van de zakelijke beslissers large language models (LLM's) zoals ChatGPT in hun werk, met een adoptie van 91% bij middelgrote bedrijven en 68% bij zelfstandigen. Gebruikers maken niet alleen meer content met AI: ze vragen ChatGPT, Perplexity en Gemini om lokale diensten, betrouwbare professionals en nichebedrijven aan te bevelen. Voor kleine ondernemingen zonder marketingteam is deze verschuiving zowel een grote kans als een uitdaging."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Het goede nieuws? Gevonden worden op ChatGPT vereist geen geavanceerde technische vaardigheden of grote advertentiebudgetten. Wat het wel vraagt, zijn duidelijke, goed gestructureerde en toegankelijke content. Laten we het uitleggen."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Waarom AI-zoekmachines anders werken dan Google"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Google geeft je een lijst met links om uit te kiezen. ChatGPT, Perplexity en Gemini lezen honderden bronnen en genereren een direct antwoord, waarbij alleen de meest relevante bedrijven of professionals worden genoemd. Daarom vraagt AI-zichtbaarheid om een andere aanpak: het is niet genoeg om in resultaten te verschijnen, je moet begrepen en gezaghebbend gevonden worden door het systeem."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "AI-zoekmachines zoeken naar specifieke informatie: wie je bent, waar je werkt, wat je aanbiedt, wie je bedient, en welke problemen je oplost. Als deze informatie ontbreekt of verspreid en onduidelijk op je site staat, zal de AI je simpelweg negeren en een concurrent voorstellen."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Twee praktische tips om je AI-zichtbaarheid vandaag te verbeteren"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Eerste tip: maak een FAQ-pagina met echte vragen van je klanten. Gebruik natuurlijke taal en geef volledige antwoorden. Bijvoorbeeld, in plaats van 'Wij bieden belastingadvies', schrijf 'Wij helpen kleine ondernemingen en zelfstandigen met de administratie, het voorbereiden van belastingaangiften en het plannen van investeringen'. Goed geschreven FAQ's zijn het favoriete formaat van LLM's bij het beantwoorden van specifieke vragen."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Tweede tip: zorg dat je website altijd actuele informatie bevat over waar je gevestigd bent (stad, wijk) en wie je bedient (sector, type klant, geografisch gebied). Voeg deze details toe aan je Over Ons-pagina, Contactpagina en dienst-beschrijvingen. GEO optimalisatie-tools belonen geografische en sectorale duidelijkheid, precies wat ChatGPT gebruikt om lokale zoekopdrachten te beantwoorden zoals 'freelance grafisch ontwerper in Utrecht' of 'loodgieter in Amsterdam-West'."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "GEO optimalisatie: de nieuwe standaard voor digitale zichtbaarheid"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Generative Engine Optimization (GEO) is de evolutie van traditionele SEO toegepast op AI-zoekmachines. Het is gebaseerd op semantisch rijke content, gestructureerde markup (zoals schema.org) en consistentie van informatie over alle digitale kanalen. In tegenstelling tot SEO, dat streeft naar ranking in resultaten, streeft GEO optimalisatie ernaar geciteerd te worden in gegenereerde antwoorden."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Voor kleine ondernemingen betekent dit: een compleet en actueel Google Bedrijfsprofiel hebben, nuttige content publiceren (gidsen, case studies, tutorials), en heldere taal gebruiken die concreet beschrijft wat je doet en voor wie. Een studie van I-Com en TeamSystem uit 2025 toonde aan dat bedrijven die AI-technologieën adopteren gemiddeld 12% hogere omzetten realiseren dan bedrijven die dat niet doen: een deel van dit voordeel komt precies voort uit grotere digitale zichtbaarheid over alle kanalen, inclusief AI-zoekmachines."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "AI-zichtbaarheid meten zonder marketingteam"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Veel kleine ondernemingen vragen zich af: hoe weet ik of ChatGPT of Perplexity mij aanbeveelt? Het antwoord is monitoren. Probeer het zelf door vragen te stellen zoals je potentiële klanten dat zouden doen: 'Welke [jouw dienst] in de buurt van [jouw stad]?', of 'Wie kan me helpen met [probleem dat je oplost] in [gebied]?'. Noteer of je naam verschijnt, in welke context, en naast welke concurrenten."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Voor een meer gestructureerde analyse maken services zoals AI'm by VNS het mogelijk om systematisch je zichtbaarheid op ChatGPT, Perplexity en Gemini te analyseren door tientallen relevante zoekopdrachten voor jouw sector en locatie te simuleren. Het systeem identificeert waar je al zichtbaar bent, waar je informatie mist, en welke content je moet verbeteren om citaties in de komende maanden te verhogen. Het is speciaal ontworpen voor kleine ondernemingen en professionals zonder intern marketingteam."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Volgende stappen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "AI-zichtbaarheid is geen voorbijgaande trend: volgens ISTAT-gegevens verdubbelde de AI-adoptie bij Italiaanse MKB-bedrijven in één jaar, en vergelijkbare patronen ontstaan in heel Europa en Noord-Amerika. Voor kleine ondernemingen betekent dit dat klanten steeds vaker ChatGPT, Perplexity of Gemini om aanbevelingen zullen vragen voordat ze überhaupt Google openen."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Begin vandaag: werk je Over Ons-pagina bij met precieze informatie over wat je doet, waar en voor wie. Maak of verbeter je FAQ-sectie. Controleer of je contactgegevens overal compleet zijn (website, Google Bedrijfsprofiel, social media). Deze drie stappen kosten weinig tijd maar maken een groot verschil om gevonden te worden door AI-zoekmachines. Als je dieper wilt gaan met een analyse van je huidige zichtbaarheid op ChatGPT en andere LLM's, ontdek dan hoe AI'm by VNS werkt op https://en.aim-vns.com."
+    }
+  ],
+  "attivo": true
+},
 {
   "id": "aim-2026-05-10-nl",
   "titolo": "Hoe lang duurt het voordat GEO optimalisatie resultaten oplevert? Realistische tijdlijnen voor kleine ondernemingen",
