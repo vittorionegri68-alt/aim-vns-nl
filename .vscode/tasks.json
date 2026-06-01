@@ -1,0 +1,104 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deploy: copia index e push",
+      "type": "shell",
+      "command": "cp index-NL.html index.html && cp public/resources/index-NL.html public/resources/index.html && git add . && git commit -m \"feat: aggiornamento\" && git push origin main",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy: solo push (index gia aggiornato)",
+      "type": "shell",
+      "command": "git add . && git commit -m \"feat: aggiornamento\" && git push origin main",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SEO: verifica robots.txt live",
+      "type": "shell",
+      "command": "curl -s https://nl.aim-vns.com/robots.txt",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SEO: verifica llms.txt live",
+      "type": "shell",
+      "command": "curl -s https://nl.aim-vns.com/llms.txt",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SEO: verifica ai.txt live",
+      "type": "shell",
+      "command": "curl -s https://nl.aim-vns.com/ai.txt",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SEO: verifica sitemap.xml live",
+      "type": "shell",
+      "command": "curl -s https://nl.aim-vns.com/sitemap.xml",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SEO: schema.org validate (Rich Results Test)",
+      "type": "shell",
+      "command": "start https://search.google.com/test/rich-results?url=https://nl.aim-vns.com",
+      "windows": { "command": "start https://search.google.com/test/rich-results?url=https://nl.aim-vns.com" },
+      "group": "test",
+      "presentation": { "reveal": "never" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SEO: PageSpeed Insights",
+      "type": "shell",
+      "command": "start https://pagespeed.web.dev/report?url=https://nl.aim-vns.com",
+      "windows": { "command": "start https://pagespeed.web.dev/report?url=https://nl.aim-vns.com" },
+      "group": "test",
+      "presentation": { "reveal": "never" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: status",
+      "type": "shell",
+      "command": "git status",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: log ultimi 5 commit",
+      "type": "shell",
+      "command": "git log --oneline -5",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev: avvia server locale",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Dev: build produzione",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    }
+  ]
+}
