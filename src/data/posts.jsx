@@ -3,6 +3,72 @@
 // Bijwerken met N8N blog workflow na livegang
 
 export const posts = [
+  {
+  "id": "aim-2026-06-2-nl",
+  "titolo": "Hoe Professionals Gevonden Worden op Perplexity: Praktische GEO-gids",
+  "data": "2026-06-08",
+  "categoria": "GEO/AEO",
+  "sommario": "Kleine ondernemingen en zelfstandige professionals kunnen hun AI-zichtbaarheid aanzienlijk verbeteren door te focussen op gestructureerde content, lokale optimalisatie en meetbare casestudies. Deze gids biedt concrete GEO optimalisatie strategieën om gevonden te worden op ChatGPT, Perplexity en Gemini, zonder marketingteam.",
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Laura, zelfstandig adviseur in Rotterdam, publiceerde een gedetailleerde casestudy over hoe zij een lokale webshop hielp de reactietijd op klantvragen met 35% te verminderen met behulp van AI-tools. Drie weken later merkte ze iets opmerkelijks: nieuwe klanten vertelden dat ze haar gevonden hadden via Perplexity, dat haar casestudy had aangehaald als praktisch voorbeeld van AI-adoptie bij kleine Nederlandse bedrijven. Wat begon als een eenvoudig blogartikel was uitgegroeid tot een krachtig zichtbaarheidskanaal op AI-zoekmachines."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Dit scenario wordt steeds gewoner nu AI-gestuurde antwoordmachines veranderen hoe mensen professionals en diensten vinden. Volgens het OESO-rapport van 2025 is de AI-adoptie onder kleine ondernemingen gestegen van 7,1% in 2023 naar 17,4%, waarbij 79% van de zakelijke beslissers nu professioneel AI-tools gebruikt. Naarmate ChatGPT, Perplexity en Gemini primaire onderzoekskanalen worden, is begrijpen hoe je gevonden wordt op ChatGPT en vergelijkbare platforms niet langer optioneel voor professionals die digitale zichtbaarheid zoeken."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Maar wat moeten professionals precies doen om op Perplexity te verschijnen? Het antwoord combineert kwaliteitscontent, technische optimalisatie en strategische lokale aanwezigheid, allemaal haalbaar zonder marketingteam."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Creëer Content met Meetbare Resultaten"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "AI-zoekmachines zoals Perplexity geven prioriteit aan bronnen die concrete, verifieerbare informatie bieden. Voor professionals en kleine ondernemingen betekent dit het publiceren van casestudies en artikelen met echte cijfers en resultaten. Onderzoek toont dat 96% van de kleine bedrijven die AI gebruiken significante tijdsbesparing rapporteert, met gemiddeld meer dan 5 uur per week per professional. Deze specifieke metrics maken content citeerbaar. Documenteer bij uw projecten altijd: de initiële klantuitdaging, de door u geïmplementeerde oplossing (met vermelding van tools zoals ChatGPT, Perplexity of Gemini), en kwantificeerbare resultaten (percentuele verbeteringen, bespaarde uren, conversie-stijgingen, omzetimpact). Deze aanpak dient twee doelen: het helpt potentiële klanten uw waardepropositie begrijpen, en het creëert materiaal dat perfect is om geciteerd te worden wanneer AI-zoekmachines vragen beantwoorden over hoe kleine ondernemingen AI succesvol implementeren in uw sector. Hoe specifieker en meetbaarder uw content, hoe groter de kans dat het een vertrouwde bron wordt voor gegenereerde zoekresultaten."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Implementeer Schema.org Gestructureerde Data"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "AI-zoekmachines verwerken webcontent anders dan mensen. Om duidelijk met deze systemen te communiceren is het implementeren van schema.org gestructureerde data in JSON-LD formaat essentieel. Dit betekent machine-leesbare informatie in uw websitecode inbedden die beschrijft wie u bent (met Organization of Person schema), welke diensten u aanbiedt (Service schema), waar u opereert (LocalBusiness met adres en coördinaten), en welke content u heeft gepubliceerd (Article en BlogPosting schemas). Voor een professional die AI-consulting aanbiedt aan kleine ondernemingen helpt het opnemen van relevante terminologie zoals AI-zichtbaarheid, GEO optimalisatie en AI-zoekmachines in uw gestructureerde data de algoritmes precies begrijpen wanneer u relevant bent. Gebruik de sameAs property om uw website te koppelen aan uw LinkedIn-profiel, professionele directories en Kamer van Koophandel-vermeldingen: deze verbindingen versterken uw autoriteitssignalen. AI'm by VNS analyseert precies deze technische elementen bij het evalueren van de digitale zichtbaarheid van een professional op AI-zoekmachines, waarbij snel wordt geïdentificeerd welke structurele componenten ontbreken of slecht zijn geconfigureerd."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Optimaliseer voor Lokale en Geografische Zoekopdrachten"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Wanneer iemand Perplexity vraagt 'vind een AI-consultant voor kleine ondernemingen in Utrecht', put de zoekmachine uit meerdere bronnen waaronder Google Business-profielen, lokale directories en geografisch getagde content. Om gevonden te worden op ChatGPT en andere AI-zoekmachines voor lokale zoekopdrachten, focus op uitgebreide GEO optimalisatie. Begin met het optimaliseren van uw Google Bedrijfsprofiel met precieze categorieën (bijv. 'Marketingadviseur', 'Bedrijfsadviseur'), een beschrijving met relevante kernwoorden (AI, kleine ondernemingen, generatieve AI, automatisering), professionele foto's en regelmatige berichten. Zorg dat uw NAP (Naam, Adres, Telefoon) identiek is op alle online vermeldingen en directories. Creëer toegewijde pagina's op uw website voor lokale zoekopdrachten, zoals 'AI-consulting voor Kleine Ondernemingen in [Stad]', met originele content die beschrijft hoe u lokale bedrijven helpt. Neem lokale succesverhalen en regiospecifieke inzichten op. Deze multi-channel aanpak vergroot exponentieel de waarschijnlijkheid dat AI-zoekmachines u identificeren als de relevante bron voor uw geografische gebied en specialisme, vooral belangrijk nu AI-zichtbaarheid steeds competitiever wordt in professionele dienstverlening."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Maak Uw Site LLM-toegankelijk"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Technische toegankelijkheid voor Large Language Models is een vaak over het hoofd gezien aspect van AI-zichtbaarheid. Controleer dat uw robots.txt bestand AI-crawler user-agents niet blokkeert (sommige sites blokkeren per ongeluk GPTBot of vergelijkbare crawlers). Structureer uw site met schone HTML, duidelijke H1/H2 koppen en beknopte alinea's: deze organisatie helpt modellen informatie nauwkeurig te extraheren. Overweeg een llms.txt bestand te adopteren (analoog aan robots.txt maar specifiek voor LLM's) om aan te geven welke secties van uw site vrij gebruikt kunnen worden door AI-zoekmachines en welke beperkt zijn. Houd content actueel en vermeld altijd publicatiedatums: algoritmes geven de voorkeur aan recente bronnen, vooral voor snel evoluerende onderwerpen zoals AI-adoptie. Gebruik duidelijke entiteitsverwijzingen: noem herhaaldelijk (maar natuurlijk) uw bedrijfsnaam, stad, branchefocus en specifieke tools waarmee u werkt. Deze technische overwegingen, hoewel ze details lijken, maken het verschil tussen genegeerd worden of geciteerd worden als betrouwbare bron in AI-gegenereerde antwoorden."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Monitor en Pas Uw Strategie Aan"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Verschijnen op Perplexity en andere AI-zoekmachines is geen eenmalige prestatie. Het digitale zichtbaarheidslandschap evolueert snel: nieuwe algoritmes, nieuwe antwoordformaten, nieuwe voorkeurbronnen. Voor professionals zonder marketingteam is het handmatig monitoren van deze complexiteit bijna onmogelijk. Test regelmatig: zoek op Perplexity, ChatGPT en Gemini naar de queries waarvoor u gevonden wilt worden (bijv. 'AI-consultant voor kleine ondernemingen in [sector] in [stad]') en verifieer of u in de resultaten verschijnt. Analyseer welke concurrenten geciteerd worden en bestudeer wat zij anders doen. Update uw content met nieuwe data, verse casestudies en actuele statistieken. Met AI-adoptie onder kleine ondernemingen nog steeds op slechts 15 tot 20% in de meeste markten, is er enorme kans om uzelf te positioneren als de lokale referentie. AI'm by VNS automatiseert precies dit continue monitoringsproces, controleert uw zichtbaarheid op ChatGPT, Perplexity en Gemini en biedt concrete begeleiding over hoe deze te verbeteren, zonder geavanceerde technische vaardigheden te vereisen."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Beginnen met AI-zichtbaarheid vereist geen grote budgetten of toegewijde teams. Het vereist authentieke content, correcte technische structuur en consistente lokale aanwezigheid. De professional die vandaag een paar uur in deze activiteiten investeert, zal zich morgen in Laura's positie bevinden: geciteerd, gevonden en benaderd via kanalen die de meeste concurrenten nog steeds negeren. Om onmiddellijk te verifiëren hoe u gepositioneerd bent op AI-zoekmachines en een gedetailleerde analyse te ontvangen, bezoek aim-vns.com en ontdek hoe AI'm by VNS u kan helpen op te vallen in het nieuwe tijdperk van intelligent zoeken."
+    }
+  ],
+  "attivo": true
+},
 {
   "id": "aim-2026-05-1-nl",
   "titolo": "Hoe kleine ondernemingen gevonden worden op ChatGPT: praktische gids voor AI-zichtbaarheid",
