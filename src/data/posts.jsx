@@ -4,6 +4,26 @@
 
 export const posts = [
   {
+    id: "geo-audit-score-vs-echte-zichtbaarheid-2026",
+    titolo: "83/100 op de GEO-audit. Nergens te vinden op Perplexity. Wat ontbreekt er echt.",
+    data: "2026-06-09",
+    categoria: "AI Zichtbaarheid",
+    sommario: "Een hoge GEO-score betekent niet dat AI-zoekmachines je noemen. Echte data van Casa Cavour: 83/100 op de technische audit, eerste op ChatGPT, afwezig op Perplexity. Waarom een negatief datapunt met methode meer waard is dan een groen cijfer zonder context.",
+    contenuto: [
+      { tipo: "paragrafo", testo: "Een echte casus. Een website wordt geanalyseerd met een van de geautomatiseerde GEO-audittools die online beschikbaar zijn. Score: 83 van de 100. GEO-Ready, zegt het rapport. Solide technische structuur, verse content, schema markup aanwezig. Alles groen. Dezelfde week. Hetzelfde bedrijf. Echte zoekopdrachten uit de sector op ChatGPT en Perplexity. Op ChatGPT: eerste positie. Op Perplexity: nergens te bekennen. Concurrenten met minder geoptimaliseerde websites verschijnen in de plaats. De score was niet onjuist. Hij was onvolledig." },
+      { tipo: "titoletto", testo: "Wat een geautomatiseerde audit meet" },
+      { tipo: "paragrafo", testo: "GEO-analysetools meten de technische leesbaarheid van een website. Ze controleren of AI-crawlers de inhoud kunnen lezen, of schema markup aanwezig is, of de structuur semantisch helder is. Dat is nuttig werk. Het is de noodzakelijke voorwaarde om geciteerd te worden. Het is niet de citatie zelf. Een website kan perfect leesbaar zijn voor AI-modellen en toch nooit worden vermeld. Omdat modellen niet alles citeren wat ze kunnen lezen. Ze citeren wat ze herkennen als relevant en gezaghebbend voor een specifieke zoekopdracht, consequent, in de tijd." },
+      { tipo: "titoletto", testo: "De kloof die scores niet laten zien" },
+      { tipo: "paragrafo", testo: "Geautomatiseerde tools vertellen je niet welke zoekopdracht ze hebben gebruikt om jouw zichtbaarheid te testen. Je weet niet of ze naar de merknaam hebben gezocht of naar een echte transactionele zoekopdracht. Je weet niet of de test is herhaald op meerdere zoekmachines met dezelfde vragen. Je weet niet of het resultaat van vandaag stabiel of toevallig is. AI-modellen zijn stochastisch: dezelfde zoekopdracht twee keer gesteld kan verschillende resultaten geven. Een enkele meting vertelt je niet of je zichtbaar bent. Het vertelt je alleen dat je op dat moment, met die zoekopdracht, op die zoekmachine aanwezig of afwezig was." },
+      { tipo: "titoletto", testo: "Echte data, positief en negatief" },
+      { tipo: "paragrafo", testo: "Dit is de casus van Casa Cavour, een vakantiewoning in Bertinoro, Italie, waarmee we sinds april 2026 werken. Baseline april 2026: Perplexity 4,3 van de 10, Gemini 3,2 van de 10. Huidige situatie juni 2026: ChatGPT eerste positie voor sectorquery s, Perplexity nog steeds het voornaamste zwakke punt. Ik publiceer beide datapunten. Niet alleen het positieve. Omdat een negatief datapunt geen probleem is om te verbergen. Het is een precieze werkrichting. We weten precies welke zoekmachine Casa Cavour niet noemt, op welke zoekopdrachten, en waarom. We weten daardoor welke content we moeten produceren, welke structuur we moeten versterken, welke gevalideerde vragen we moeten toevoegen. Een negatief resultaat met methode is nuttiger dan een hoge score zonder context." },
+      { tipo: "titoletto", testo: "Hoe de aanpak van AI'm werkt" },
+      { tipo: "paragrafo", testo: "Voor elke klant definiÃ«ren we een set van 10 gevalideerde vragen, specifiek voor de sector. Geen generieke vragen: vragen die echte klanten in die categorie elke dag stellen aan ChatGPT, Perplexity en Gemini. Dezelfde 10 vragen worden door het hele systeem gebruikt: FAQPage-schema op de website, Q&A-pagina, blog, monitoringworkflow. Consistentie tussen deze contactpunten is wat stabiele citaties in de loop van de tijd opbouwt. We meten de baseline voor elke interventie. We meten opnieuw na elke optimalisatiecyclus. Resultaten zijn openbaar, voor iedereen verifieerbaar, goed of slecht." },
+      { tipo: "link", testo: "mailto:info@aim-vns.com", etichetta: "Gratis analyse: schrijf naar info@aim-vns.com" },
+    ],
+    attivo: true,
+  },
+  {
   "id": "aim-2026-06-2-nl",
   "titolo": "Hoe Professionals Gevonden Worden op Perplexity: Praktische GEO-gids",
   "data": "2026-06-08",
@@ -353,23 +373,4 @@ export const posts = [
     ],
     attivo: true,
   },
-  {
-    id: "geo-audit-score-vs-echte-zichtbaarheid-2026",
-    titolo: "83/100 op de GEO-audit. Nergens te vinden op Perplexity. Wat ontbreekt er echt.",
-    data: "2026-06-09",
-    categoria: "AI Zichtbaarheid",
-    sommario: "Een hoge GEO-score betekent niet dat AI-zoekmachines je noemen. Echte data van Casa Cavour: 83/100 op de technische audit, eerste op ChatGPT, afwezig op Perplexity. Waarom een negatief datapunt met methode meer waard is dan een groen cijfer zonder context.",
-    contenuto: [
-      { tipo: "paragrafo", testo: "Een echte casus. Een website wordt geanalyseerd met een van de geautomatiseerde GEO-audittools die online beschikbaar zijn. Score: 83 van de 100. GEO-Ready, zegt het rapport. Solide technische structuur, verse content, schema markup aanwezig. Alles groen. Dezelfde week. Hetzelfde bedrijf. Echte zoekopdrachten uit de sector op ChatGPT en Perplexity. Op ChatGPT: eerste positie. Op Perplexity: nergens te bekennen. Concurrenten met minder geoptimaliseerde websites verschijnen in de plaats. De score was niet onjuist. Hij was onvolledig." },
-      { tipo: "titoletto", testo: "Wat een geautomatiseerde audit meet" },
-      { tipo: "paragrafo", testo: "GEO-analysetools meten de technische leesbaarheid van een website. Ze controleren of AI-crawlers de inhoud kunnen lezen, of schema markup aanwezig is, of de structuur semantisch helder is. Dat is nuttig werk. Het is de noodzakelijke voorwaarde om geciteerd te worden. Het is niet de citatie zelf. Een website kan perfect leesbaar zijn voor AI-modellen en toch nooit worden vermeld. Omdat modellen niet alles citeren wat ze kunnen lezen. Ze citeren wat ze herkennen als relevant en gezaghebbend voor een specifieke zoekopdracht, consequent, in de tijd." },
-      { tipo: "titoletto", testo: "De kloof die scores niet laten zien" },
-      { tipo: "paragrafo", testo: "Geautomatiseerde tools vertellen je niet welke zoekopdracht ze hebben gebruikt om jouw zichtbaarheid te testen. Je weet niet of ze naar de merknaam hebben gezocht of naar een echte transactionele zoekopdracht. Je weet niet of de test is herhaald op meerdere zoekmachines met dezelfde vragen. Je weet niet of het resultaat van vandaag stabiel of toevallig is. AI-modellen zijn stochastisch: dezelfde zoekopdracht twee keer gesteld kan verschillende resultaten geven. Een enkele meting vertelt je niet of je zichtbaar bent. Het vertelt je alleen dat je op dat moment, met die zoekopdracht, op die zoekmachine aanwezig of afwezig was." },
-      { tipo: "titoletto", testo: "Echte data, positief en negatief" },
-      { tipo: "paragrafo", testo: "Dit is de casus van Casa Cavour, een vakantiewoning in Bertinoro, Italie, waarmee we sinds april 2026 werken. Baseline april 2026: Perplexity 4,3 van de 10, Gemini 3,2 van de 10. Huidige situatie juni 2026: ChatGPT eerste positie voor sectorquery s, Perplexity nog steeds het voornaamste zwakke punt. Ik publiceer beide datapunten. Niet alleen het positieve. Omdat een negatief datapunt geen probleem is om te verbergen. Het is een precieze werkrichting. We weten precies welke zoekmachine Casa Cavour niet noemt, op welke zoekopdrachten, en waarom. We weten daardoor welke content we moeten produceren, welke structuur we moeten versterken, welke gevalideerde vragen we moeten toevoegen. Een negatief resultaat met methode is nuttiger dan een hoge score zonder context." },
-      { tipo: "titoletto", testo: "Hoe de aanpak van AI'm werkt" },
-      { tipo: "paragrafo", testo: "Voor elke klant definiÃ«ren we een set van 10 gevalideerde vragen, specifiek voor de sector. Geen generieke vragen: vragen die echte klanten in die categorie elke dag stellen aan ChatGPT, Perplexity en Gemini. Dezelfde 10 vragen worden door het hele systeem gebruikt: FAQPage-schema op de website, Q&A-pagina, blog, monitoringworkflow. Consistentie tussen deze contactpunten is wat stabiele citaties in de loop van de tijd opbouwt. We meten de baseline voor elke interventie. We meten opnieuw na elke optimalisatiecyclus. Resultaten zijn openbaar, voor iedereen verifieerbaar, goed of slecht." },
-      { tipo: "link", testo: "mailto:info@aim-vns.com", etichetta: "Gratis analyse: schrijf naar info@aim-vns.com" },
-    ],
-    attivo: true,
-  },]
+]
