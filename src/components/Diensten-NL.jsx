@@ -1,84 +1,77 @@
-// Servizi.jsx — AI'm by VNS NL
-// v1.1 — 04/05/2026 — testi pacchetti aggiornati
+﻿// Diensten-NL.jsx — AI'm by VNS NL
+// v2.0 — tekst herschreven voor niet-technisch publiek — juni 2026
 import { useEffect, useRef } from 'react'
 
-const pacchetti = [
+const pakketten = [
   {
     nome: 'Starter',
     tag: 'Eerste stap',
-    desc: 'Je hebt al een website, maar je weet niet of ChatGPT, Gemini of Perplexity je kunnen vinden? We meten je huidige zichtbaarheid op AI-zoekmachines, laten zien wat er ontbreekt en leveren de geoptimaliseerde technische bestanden om de gaten te dichten. Eenmalige betaling, geen abonnement.',
+    desc: "Je hebt een website maar weet niet of ChatGPT jou kan vinden? We controleren hoe het er nu voor staat, vertellen je wat niet werkt en leveren alles wat nodig is om het te verbeteren. Eenmalige betaling, geen abonnement.",
     incluso: [
-      'Gratis baseline-analyse in het eerste gesprek — geen verdere verplichtingen',
-      'Volledige audit: schema.org, robots.txt, llms.txt, ai.txt, sitemap',
-      'Geoptimaliseerde technische bestanden klaar voor gebruik in jouw sector',
-      'Tweede baseline na 30 dagen om verbeteringen te meten',
-      'Google Business Profile-advies',
+      'Gratis eerste analyse — geen verplichtingen',
+      'Volledige controle van hoe AI-zoekmachines jou zien',
+      'Geoptimaliseerde technische bestanden klaar voor je website',
+      'Tweede controle na 30 dagen om verbeteringen te meten',
+      'Aanbevelingen voor Google Bedrijfsprofiel',
     ],
-    prezzo: 'Vanaf 180 €',
+    prezzo: 'Vanaf 180 EUR',
     prezzoSub: 'Eenmalige betaling · Geen abonnement',
-    cta: 'Vraag jouw audit aan',
+    cta: 'Vraag je audit aan',
     highlight: false,
   },
   {
     nome: 'Growth',
-    tag: 'Kernservice',
-    desc: 'We bouwen je site vanaf nul, geoptimaliseerd om gevonden te worden door ChatGPT, Perplexity en Gemini vanaf de eerste dag. Daarna houden we die site levend met verse content en laten we zien hoe je zichtbaarheid groeit, met echte cijfers. Heb je al een site en wil je die behouden, neem dan contact op: we beoordelen elke situatie individueel.',
+    tag: 'Hoofddienst',
+    desc: "We bouwen je website vanaf nul, ontworpen om vanaf dag een gevonden te worden door ChatGPT. Daarna houden we hem actueel met nieuwe content en laten we je zien hoe de resultaten groeien, met echte cijfers. Heb je al een website? Laten we praten: we beoordelen elke situatie samen.",
     incluso: [
-      'Baseline-analyse voordat we beginnen',
-      'React-site vanaf nul gebouwd, AI-geoptimaliseerd',
-      'Google Business Profile — aanmaak en configuratie inbegrepen',
-      'Rich Results Test-validatie voor de livegang',
-      '10 gevalideerde GEO/AEO-vragen voor jouw sector',
-      'Blogpost om de twee weken, geautomatiseerd',
-      'Maandelijkse rapporten gedurende de eerste 3 maanden, daarna per kwartaal',
-      'Gesprek na elk rapport met Vittorio om de gegevens te analyseren',
-      'Uitvoering van corrigerende acties',
-      'Doorlopende e-mailondersteuning',
+      'Analyse van je huidige situatie voor we beginnen',
+      'Nieuwe website gebouwd voor AI-zoekmachines',
+      'Google Bedrijfsprofiel — installatie inbegrepen',
+      'Technische verificatie voor publicatie',
+      'Content gebouwd rond de echte vragen van je klanten',
+      'Blogartikel elke twee weken, automatisch',
+      'Maandelijkse rapporten de eerste 3 maanden, daarna per kwartaal',
+      'Gesprek met Vittorio om de data samen te bespreken',
+      'Corrigerende acties inbegrepen',
+      'Doorlopende ondersteuning per e-mail',
     ],
-    prezzo: 'Vanaf 480 €',
-    prezzoSub: '+ jaarabonnement vanaf 500 €',
-    cta: 'Praat over jouw project',
+    prezzo: 'Vanaf 480 EUR',
+    prezzoSub: '+ jaarabonnement vanaf 500 EUR',
+    cta: 'Bespreek je project',
     highlight: true,
   },
   {
     nome: 'Pro',
     tag: 'Maximale zichtbaarheid',
-    desc: 'Alles uit Growth, plus een publieke Q&A-sectie op de site, een gepersonaliseerd dashboard met jouw AI-zichtbaarheidsdata altijd up-to-date en geautomatiseerde Instagram-publicatie. De relatie met je volgers blijft bij jou.',
+    desc: "Alles uit Growth, plus een Q&A-pagina op je website, een persoonlijk dashboard met je zichtbaarheidsdata altijd actueel, en geautomatiseerde publicatie op Instagram. De relatie met je klanten blijft bij jou.",
     incluso: [
-      'Alles uit het Growth-pakket',
-      'Publiek Q&A-blok met de 10 gevalideerde vragen en volledige antwoorden',
-      'Persoonlijk online dashboard — AI-zichtbaarheidsdata altijd up-to-date',
+      'Alles uit Growth',
+      'Q&A-pagina met de 10 echte vragen van je klanten',
+      'Persoonlijk dashboard — je zichtbaarheidsdata altijd live',
       'Geautomatiseerde Instagram-publicatie',
       'Maandelijkse rapporten in plaats van per kwartaal',
     ],
-    prezzo: 'Vanaf 580 €',
-    prezzoSub: '+ jaarabonnement vanaf 780 €',
-    cta: 'Praat over jouw project',
+    prezzo: 'Vanaf 580 EUR',
+    prezzoSub: '+ jaarabonnement vanaf 780 EUR',
+    cta: 'Bespreek je project',
     highlight: false,
   },
 ]
 
-export default function Servizi() {
+export default function Diensten() {
   const ref = useRef(null)
-
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add('visible')
-      }),
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') }),
       { threshold: 0.1 }
     )
     ref.current?.querySelectorAll('.reveal').forEach(el => observer.observe(el))
     return () => observer.disconnect()
   }, [])
-
   return (
     <section id="diensten" ref={ref}
-      style={{ background: '#0d0d0d', padding: 'clamp(64px,8vw,120px) 0',
-        borderTop: '1px solid #141414' }}>
+      style={{ background: '#0d0d0d', padding: 'clamp(64px,8vw,120px) 0', borderTop: '1px solid #141414' }}>
       <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0 clamp(24px,4vw,64px)' }}>
-
-        {/* Header */}
         <div style={{ marginBottom: 'clamp(40px,5vw,64px)' }}>
           <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '10px',
             letterSpacing: '0.3em', textTransform: 'uppercase', color: '#A0782A',
@@ -86,35 +79,27 @@ export default function Servizi() {
           <h2 style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
             fontSize: 'clamp(36px,4vw,64px)', textTransform: 'uppercase',
             letterSpacing: '0.02em', color: '#ffffff', lineHeight: 0.95 }}>
-            KIES JOUW<br />
+            KIES JE<br />
             <span style={{ color: '#A0782A' }}>STARTPUNT.</span>
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(13px,1vw,15px)',
             color: '#444', lineHeight: 1.7, marginTop: '1.5rem', maxWidth: '600px' }}>
-            Elk AI'm by VNS-project is een directe samenwerking met Vittorio.
-            Geen tussenpersonen, geen standaardoplossingen: elke aanpak wordt samen
-            met jou opgebouwd en gevalideerd voordat die live gaat.
-            We zijn er om jou samen te laten groeien.
+            Je werkt rechtstreeks met Vittorio, zonder tussenpersonen.
+            Elke aanpak wordt samen met jou opgebouwd, in gewone taal uitgelegd
+            en geverifieerd voor publicatie. Geen vakjargon, geen verrassingen.
           </p>
         </div>
-
-        {/* Cards */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)',
-          gap: '1px', background: '#141414' }}
-          className="packs-grid">
-          {pacchetti.map((p, i) => (
+          gap: '1px', background: '#141414' }} className="packs-grid">
+          {pakketten.map((p, i) => (
             <div key={i} className="reveal"
-              style={{
-                background: p.highlight ? '#0f0f0f' : '#0a0a0a',
+              style={{ background: p.highlight ? '#0f0f0f' : '#0a0a0a',
                 padding: 'clamp(28px,3vw,48px) clamp(20px,2.5vw,36px)',
                 borderTop: p.highlight ? '2px solid #A0782A' : '2px solid transparent',
-                transitionDelay: `${i * 0.1}s`,
-                display: 'flex', flexDirection: 'column',
-              }}>
+                transitionDelay: `${i * 0.1}s`, display: 'flex', flexDirection: 'column' }}>
               <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
                 fontSize: '9px', color: p.highlight ? '#A0782A' : '#333',
-                letterSpacing: '0.25em', textTransform: 'uppercase',
-                marginBottom: '0.5rem' }}>{p.tag}</div>
+                letterSpacing: '0.25em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{p.tag}</div>
               <div style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
                 fontSize: 'clamp(28px,2.5vw,40px)', color: '#ffffff',
                 textTransform: 'uppercase', letterSpacing: '0.02em',
@@ -122,19 +107,15 @@ export default function Servizi() {
               <div style={{ width: '24px', height: '1px', background: '#1A1A1A', marginBottom: '1rem' }} />
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(13px,1vw,14px)',
                 color: '#444', lineHeight: 1.7, marginBottom: '1.5rem' }}>{p.desc}</p>
-
               <ul style={{ listStyle: 'none', marginBottom: '2rem', flex: 1 }}>
                 {p.incluso.map((item, j) => (
                   <li key={j} style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px',
                     color: '#555', padding: '6px 0', borderBottom: '1px solid #141414',
                     display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ color: '#A0782A', fontSize: '10px' }}>—</span>
-                    {item}
+                    <span style={{ color: '#A0782A', fontSize: '10px' }}>—</span>{item}
                   </li>
                 ))}
               </ul>
-
-              {/* Prijsblok */}
               <div style={{ borderTop: '1px solid #141414', paddingTop: '1.25rem', marginBottom: '1.5rem' }}>
                 <div style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
                   fontSize: 'clamp(24px,2vw,32px)', color: p.highlight ? '#A0782A' : '#ffffff',
@@ -142,7 +123,6 @@ export default function Servizi() {
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px',
                   color: '#444', marginTop: '4px', letterSpacing: '0.05em' }}>{p.prezzoSub}</div>
               </div>
-
               <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener" style={{
                 fontFamily: "'Inter', sans-serif", fontWeight: 700,
                 fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase',
@@ -165,18 +145,13 @@ export default function Servizi() {
             </div>
           ))}
         </div>
-
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#333',
-          letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem',
-          textAlign: 'center' }}>
-          Alle prijzen zijn exclusief btw · Extra taal 100 € · Minimale looptijd 12 maanden voor Growth en Pro
+          letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem', textAlign: 'center' }}>
+          Alle prijzen zijn exclusief BTW · Extra taal 100 EUR · Minimale looptijd 12 maanden voor Growth en Pro
         </p>
       </div>
-
       <style>{`
-        @media (max-width: 768px) {
-          .packs-grid { grid-template-columns: 1fr !important; }
-        }
+        @media (max-width: 768px) { .packs-grid { grid-template-columns: 1fr !important; } }
       `}</style>
     </section>
   )

@@ -1,45 +1,44 @@
-// AI'm by VNS — qanda.jsx (NL)
-// 10 gevalideerde GEO/AEO-vragen — Nederlandse versie
-
+﻿// AI'm by VNS — qanda.jsx NL
+// v2.0 — vragen herschreven vanuit klantperspectief — juni 2026
 export const qanda = [
   {
-    q: "Wat is AI-zichtbaarheid voor kleine ondernemingen?",
-    a: "AI-zichtbaarheid is het vermogen van een onderneming om voor te komen in antwoorden van ChatGPT, Perplexity en Gemini. AI-zoekmachines lezen gestructureerde en openbare webinhoud, geen categoriepagina's of social media.",
+    q: "Waarom verschijnt mijn bedrijf niet als iemand zoekt via ChatGPT?",
+    a: "ChatGPT leest geen Facebook-pagina's, Instagram-profielen of vermeldingen op Booking en Airbnb. Het leest websites met de juiste informatie op de juiste plek. Als je website niet goed is opgebouwd, weet ChatGPT simpelweg niet dat je bestaat.",
   },
   {
-    q: "Hoe verbetert AI'm by VNS mijn zichtbaarheid op ChatGPT?",
-    a: "Wij bouwen samen met jou een set van 10 vragen die specifiek zijn voor jouw sector en regio. Deze gebruiken we om de zichtbaarheid te meten en de website te optimaliseren met volledige schema.org, llms.txt, ai.txt en geautomatiseerde GEO/AEO-blog. Naarmate resultaten consolideren, worden de vragen bijgewerkt om het bereik progressief te vergroten.",
+    q: "Hoe zorgen jullie ervoor dat mijn bedrijf verschijnt op ChatGPT?",
+    a: "Eerst controleren we hoe zichtbaar je nu bent, met een score van 0 tot 10. Dan maken we de nodige technische aanpassingen aan je website zodat AI-zoekmachines begrijpen wie je bent, wat je doet en waar je actief bent. We bouwen ook content die de echte vragen van je klanten beantwoordt. In de loop van de tijd breiden we het bereik geleidelijk uit: eerst je gemeente, dan de regio.",
   },
   {
-    q: "Wat kost het verbeteren van de AI-zichtbaarheid van mijn bedrijf?",
-    a: "Wij bieden drie pakketten: Starter voor technische basisoptimalisatie, Growth met geautomatiseerde blog, kwartaalrapportage en correctieve acties, Pro met Instagram automatisering en geavanceerde concurrentieanalyse. Neem contact op voor een offerte op maat.",
+    q: "Wat kost de dienst?",
+    a: "We hebben drie pakketten: Starter voor wie de situatie wil begrijpen en de basis wil verbeteren, Growth voor wie een nieuwe website wil en resultaten op de lange termijn, Pro voor wie maximale zichtbaarheid wil met maandelijkse updates en aanwezigheid op Instagram. Neem contact op voor een offerte op maat.",
   },
   {
-    q: "Hoe snel zijn resultaten zichtbaar op AI-zoekmachines?",
-    a: "De eerste meetbare verbeteringen in de GEO/AEO-score treden typisch op binnen 4 tot 8 weken na volledige technische optimalisatie. Het systeem is gevalideerd op Casa Cavour (Bertinoro, IT) en RAB — Romagna Affitti Brevi.",
+    q: "Hoe lang duurt het voordat ik resultaten zie?",
+    a: "De eerste meetbare verbeteringen zijn doorgaans zichtbaar binnen 4 tot 8 weken. Het systeem is getest op Casa Cavour in Bertinoro en op RAB Romagna kortetermijnverhuur voor het aan klanten werd aangeboden.",
   },
   {
-    q: "Lezen AI-zoekmachines mijn Facebook-pagina of Airbnb-profiel?",
-    a: "Nee. ChatGPT, Perplexity en Gemini lezen geen Facebook-pagina's, Instagram-profielen, Airbnb-vermeldingen, Booking.com of Google Business-profielen. Ze lezen websites met schema.org, llms.txt-bestanden en semantische blogteksten.",
+    q: "Is een Facebook-pagina of een Airbnb-profiel niet genoeg?",
+    a: "Nee. ChatGPT, Perplexity en Gemini lezen geen Facebook, Instagram, Airbnb, Booking of Google Maps. Ze lezen websites. Als je geen website hebt met de juiste informatie, besta je voor deze zoekmachines niet.",
   },
   {
-    q: "Moet ik al een website hebben om AI'm by VNS te gebruiken?",
-    a: "Nee. AI'm by VNS kan zowel een bestaande website optimaliseren als een nieuwe bouwen die geoptimaliseerd is voor AI-zoekmachines, met volledige schema.org, llms.txt en ai.txt, en een geautomatiseerde GEO/AEO-blog.",
+    q: "Moet ik al een website hebben?",
+    a: "Nee. We kunnen zowel je bestaande website verbeteren als een nieuwe bouwen die van meet af aan is ontworpen om gevonden te worden door ChatGPT. In beide gevallen beginnen we altijd met een analyse van je huidige situatie.",
   },
   {
-    q: "Werkt AI'm by VNS alleen in Nederland of ook in Italië?",
-    a: "AI'm by VNS is actief in beide markten: Nederland en Italië. De dienst is beschikbaar in het Nederlands, Engels en Italiaans. Het operationele hoofdkantoor is gevestigd in Nijkerk, NL.",
+    q: "Werken jullie alleen in Nederland of ook in andere landen?",
+    a: "We zijn actief in Nederland en in Italie. De dienst is beschikbaar in het Nederlands, Engels en Italiaans. Onze operationele basis is in Nijkerk.",
   },
   {
-    q: "Wat is schema.org en waarom is het belangrijk voor AI-zichtbaarheid?",
-    a: "Schema.org is een markup-taal waarmee AI-zoekmachines kunnen begrijpen wie je bent, wat je doet en waar je bent. Zonder schema.org is je website anonieme tekst. AI'm by VNS implementeert altijd Organization, Person, FAQPage en BreadcrumbList voor elke klant.",
+    q: "Moet ik iets van technologie weten?",
+    a: "Nee. Onze taak is ervoor zorgen dat jij je daar niet mee hoeft bezig te houden. We leggen alles uit in gewone taal, laten je resultaten zien met duidelijke cijfers en regelen alle technische onderdelen zelf. Jij blijft gewoon doen wat je doet.",
   },
   {
-    q: "Wat is het llms.txt-bestand en waarom heeft mijn website het nodig?",
-    a: "Het llms.txt-bestand geeft crawlers van taalmodellen aan hoe ze jouw website moeten lezen. Vergelijkbaar met robots.txt voor zoekmachines, vergroot llms.txt de kans dat je geciteerd wordt in gegenereerde antwoorden van ChatGPT en Perplexity.",
+    q: "Wat als mijn score laag is?",
+    a: "Een lage score is geen slecht nieuws. Het betekent dat we precies weten waar we moeten ingrijpen. Het is veel beter om te weten dat de situatie verbeterd kan worden dan het helemaal niet te weten. Het ergste is niet een lage score hebben: het is niet weten dat je die hebt.",
   },
   {
-    q: "Hoe wordt de AI-zichtbaarheid van mijn bedrijf gemeten?",
-    a: "Met een score van 0 tot 10 per zoekmachine (Perplexity, Gemini, ChatGPT) via 10 vragen die samen met jou zijn opgesteld. De baseline-analyse stelt het startpunt vast. Naarmate resultaten consolideren, worden vragen bijgewerkt om het bereik te vergroten. Kwartaalanalyses controleren altijd ook de originele vragen om te garanderen dat de lokale fundamenten solide blijven.",
+    q: "Hoe meten jullie de resultaten in de tijd?",
+    a: "We gebruiken altijd dezelfde vragen en dezelfde methode, zodat de cijfers vergelijkbaar zijn in de tijd. Elk kwartaal een duidelijk rapport met bijgewerkte scores. Als de resultaten in een gebied stabiel zijn, breiden we de vragen uit om een groter gebied te dekken, waarbij we altijd controleren of de basis solide blijft.",
   },
 ]
