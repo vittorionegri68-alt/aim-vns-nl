@@ -6,34 +6,39 @@ export default function Hero() {
   return (
     <section style={{ background: '#080808', paddingTop: '64px', minHeight: '100vh',
       display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+
       {/* Wordmark decorativo background */}
-<div aria-hidden="true" style={{
-  position: 'absolute',
-  inset: 0,
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  overflow: 'hidden',
-  pointerEvents: 'none',
-  userSelect: 'none',
-  zIndex: 0,
-}}>
-  <span style={{
-    fontFamily: "'Oswald', sans-serif",
-    fontWeight: 700,
-    fontSize: 'clamp(120px, 22vw, 340px)',
-    letterSpacing: '0.02em',
-    textTransform: 'uppercase',
-    lineHeight: 1,
-    whiteSpace: 'nowrap',
-    color: '#111111',
-  }}>
-    <span style={{ color: '#111111' }}>AI</span>
-    <span style={{ color: '#0d0d0d' }}>'M</span>
-  </span>
-</div>
+      <div aria-hidden="true" style={{
+        position: 'absolute',
+        inset: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        pointerEvents: 'none',
+        userSelect: 'none',
+        zIndex: 0,
+      }}>
+        <span style={{
+          fontFamily: "'Oswald', sans-serif",
+          fontWeight: 700,
+          fontSize: 'clamp(120px, 22vw, 340px)',
+          letterSpacing: '0.02em',
+          textTransform: 'uppercase',
+          lineHeight: 1,
+          whiteSpace: 'nowrap',
+          color: '#111111',
+        }}>
+          <span style={{ color: '#111111' }}>AI</span>
+          <span style={{ color: '#0d0d0d' }}>'M</span>
+        </span>
+      </div>
+
+      {/* Contenuto */}
       <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0 clamp(24px,4vw,64px)',
         position: 'relative', zIndex: 1 }}>
+
+        {/* Eyebrow */}
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px',
           border: '1px solid #1A1A1A', padding: '6px 14px', marginBottom: '2.5rem' }}>
           <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#A0782A' }} />
@@ -42,13 +47,18 @@ export default function Hero() {
             Voor kleine bedrijven zonder marketingteam
           </span>
         </div>
+
+        {/* Headline */}
         <h1 style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
           fontSize: 'clamp(48px, 9vw, 132px)', letterSpacing: '0.02em',
           textTransform: 'uppercase', lineHeight: 0.92, marginBottom: '2.5rem' }}>
           <span style={{ display: 'block', color: '#ffffff' }}>MINDER AANVRAGEN</span>
           <span style={{ display: 'block', color: '#A0782A' }}>DAN VROEGER?</span>
-          <span style={{ display: 'block', color: '#1f1f1f' }}>HET IS NIET JOUW SCHULD.</span>
+          <span style={{ display: 'block', color: '#1f1f1f',
+            fontSize: 'clamp(28px, 5.5vw, 80px)' }}>HET IS NIET JOUW SCHULD.</span>
         </h1>
+
+        {/* Subline + CTA */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto',
           gap: '2rem', alignItems: 'flex-end', marginBottom: '3rem' }}
           className="hero-bottom">
@@ -78,6 +88,8 @@ export default function Hero() {
             </span>
           </div>
         </div>
+
+        {/* Data strip */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)',
           gap: '1px', background: '#141414', borderTop: '1px solid #141414' }}
           className="data-strip">
@@ -100,6 +112,7 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
       <style>{`
         @media (max-width: 768px) {
           .hero-bottom { grid-template-columns: 1fr !important; }
