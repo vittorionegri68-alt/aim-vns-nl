@@ -6,18 +6,23 @@ export default function Hero() {
   return (
     <section style={{ background: '#080808', paddingTop: '64px', minHeight: '100vh',
       display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-      <div aria-hidden="true" style={{
-        position: 'absolute', top: '50%', left: '50%',
-        transform: 'translate(-50%, -50%)',
-        fontFamily: "'Oswald', sans-serif", fontWeight: 700,
-        fontSize: 'clamp(120px, 22vw, 340px)',
-        letterSpacing: '0.02em', textTransform: 'uppercase',
-        color: '#0f0f0f', whiteSpace: 'nowrap',
-        pointerEvents: 'none', userSelect: 'none', zIndex: 0, lineHeight: 1,
-      }}>
-        <span style={{ color: '#111111' }}>AI</span>
-        <span style={{ color: '#0d0d0d' }}>'M</span>
-      </div>
+      {/* Wordmark decorativo background */}
+<div aria-hidden="true" style={{
+  position: 'absolute', top: '50%', left: '50%',
+  transform: 'translate(-50%, -50%)',
+  fontFamily: "'Oswald', sans-serif", fontWeight: 700,
+  fontSize: 'clamp(120px, 22vw, 340px)',
+  letterSpacing: '0.02em', textTransform: 'uppercase',
+  color: '#0f0f0f', whiteSpace: 'nowrap',
+  pointerEvents: 'none', userSelect: 'none', zIndex: 0,
+  lineHeight: 1,
+  width: '100%',
+  textAlign: 'center',
+  overflow: 'hidden',
+}}>
+  <span style={{ color: '#111111' }}>AI</span>
+  <span style={{ color: '#0d0d0d' }}>'M</span>
+</div>
       <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0 clamp(24px,4vw,64px)',
         position: 'relative', zIndex: 1 }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px',
