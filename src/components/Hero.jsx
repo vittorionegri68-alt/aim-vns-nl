@@ -49,13 +49,13 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
+        <h1 className="hero-h1" style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
           fontSize: 'clamp(48px, 9vw, 132px)', letterSpacing: '0.02em',
           textTransform: 'uppercase', lineHeight: 0.92, marginBottom: '2.5rem' }}>
           <span style={{ display: 'block', color: '#ffffff' }}>MINDER AANVRAGEN</span>
           <span style={{ display: 'block', color: '#A0782A' }}>DAN VROEGER?</span>
           <span style={{ display: 'block', color: '#1f1f1f',
-            fontSize: 'clamp(28px, 5.5vw, 80px)' }}>HET IS NIET JOUW SCHULD.</span>
+            fontSize: 'clamp(24px, 4.5vw, 80px)' }}>HET IS NIET JOUW SCHULD.</span>
         </h1>
 
         {/* Subline + CTA */}
@@ -72,15 +72,17 @@ export default function Hero() {
             </p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end' }}>
-            <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener" style={{
-              fontFamily: "'Inter', sans-serif", fontWeight: 700,
-              fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase',
-              color: '#080808', background: '#A0782A',
-              padding: '14px 28px', borderRadius: 0,
-              transition: 'opacity 0.2s', textDecoration: 'none', whiteSpace: 'nowrap',
-            }}
-            onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
-            onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+            <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener"
+              className="hero-cta"
+              style={{
+                fontFamily: "'Inter', sans-serif", fontWeight: 700,
+                fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase',
+                color: '#080808', background: '#A0782A',
+                padding: '14px 28px', borderRadius: 0,
+                transition: 'opacity 0.2s', textDecoration: 'none', whiteSpace: 'nowrap',
+              }}
+              onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+              onMouseLeave={e => e.currentTarget.style.opacity = '1'}
             >Ontdek of ze jou kunnen vinden - gratis</a>
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px',
               color: '#333', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
@@ -118,6 +120,8 @@ export default function Hero() {
           .hero-bottom { grid-template-columns: 1fr !important; }
           .hero-bottom > div:last-child { align-items: flex-start !important; }
           .data-strip { grid-template-columns: repeat(2,1fr) !important; }
+          .hero-h1 { font-size: clamp(36px, 8vw, 132px) !important; }
+          .hero-cta { white-space: normal !important; text-align: center !important; width: 100% !important; box-sizing: border-box !important; }
         }
       `}</style>
     </section>
