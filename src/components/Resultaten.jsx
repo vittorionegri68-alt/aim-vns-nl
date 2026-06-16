@@ -81,7 +81,7 @@ export default function Resultaten() {
             <span style={{ color: '#A0782A' }}>IS EEN ROUTEKAART.</span>
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(13px,1vw,15px)',
-            color: '#444', lineHeight: 1.7, marginTop: '1.5rem', maxWidth: '560px' }}>
+            color: '#AAAAAA', lineHeight: 1.7, marginTop: '1.5rem', maxWidth: '560px' }}>
             Veel bedrijven die we analyseren beginnen met een lage score.
             Dat is geen slecht nieuws: het betekent dat we precies weten waar we moeten ingrijpen.
             Het ergste is niet een lage score hebben.

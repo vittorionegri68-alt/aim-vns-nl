@@ -85,7 +85,7 @@ export default function Diensten() {
                 letterSpacing: '0.02em', marginBottom: '1rem', lineHeight: 1 }}>{p.nome}</div>
               <div style={{ width: '24px', height: '1px', background: '#1A1A1A', marginBottom: '1rem' }} />
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(13px,1vw,14px)',
-                color: '#444', lineHeight: 1.7, marginBottom: '1.5rem' }}>{p.desc}</p>
+                color: '#AAAAAA', lineHeight: 1.7, marginBottom: '1.5rem' }}>{p.desc}</p>
               <ul style={{ listStyle: 'none', marginBottom: '2rem', flex: 1 }}>
                 {p.incluso.map((item, j) => (
                   <li key={j} style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA',

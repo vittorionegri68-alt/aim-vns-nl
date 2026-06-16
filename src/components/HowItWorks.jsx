@@ -57,7 +57,7 @@ export default function HowItWorks() {
                 marginBottom: '1rem', lineHeight: 1 }}>{s.title}</div>
               <div style={{ width: '24px', height: '1px', background: '#1A1A1A', marginBottom: '1rem' }} />
               <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400,
-                fontSize: 'clamp(13px,1vw,15px)', color: '#444', lineHeight: 1.7 }}>{s.desc}</p>
+                fontSize: 'clamp(13px,1vw,15px)', color: '#AAAAAA', lineHeight: 1.7 }}>{s.desc}</p>
             </div>
           ))}
         </div>

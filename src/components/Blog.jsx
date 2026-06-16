@@ -146,7 +146,7 @@ export default function Blog() {
                   lineHeight: 1.15, marginBottom: '1rem', flex: 1 }}>{p.titolo}</h3>
                 <div style={{ width: '24px', height: '1px', background: '#1A1A1A', marginBottom: '1rem' }} />
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '13px',
-                  color: '#444', lineHeight: 1.7, marginBottom: '1.5rem' }}>{p.sommario}</p>
+                  color: '#AAAAAA', lineHeight: 1.7, marginBottom: '1.5rem' }}>{p.sommario}</p>
                 <button onClick={() => apriArtikel(p.id)} style={{
                   background: 'none', border: 'none', cursor: 'pointer', padding: 0,
                   fontFamily: "'Inter', sans-serif", fontWeight: 700,
