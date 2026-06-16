@@ -1,5 +1,5 @@
 ﻿// Hero.jsx — AI'm by VNS NL
-// v2.0 — tekst herschreven voor niet-technisch publiek — juni 2026
+// v2.1 — muted color #AAAAAA, data strip removed — juni 2026
 import { config } from '../config.js'
 
 export default function Hero() {
@@ -43,7 +43,7 @@ export default function Hero() {
           border: '1px solid #1A1A1A', padding: '6px 14px', marginBottom: '2.5rem' }}>
           <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#A0782A' }} />
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
-            fontSize: '10px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#555' }}>
+            fontSize: '10px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#AAAAAA' }}>
             Voor kleine bedrijven zonder marketingteam
           </span>
         </div>
@@ -65,7 +65,7 @@ export default function Hero() {
           <div>
             <div style={{ width: '40px', height: '2px', background: '#A0782A', marginBottom: '1rem' }} />
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400,
-              fontSize: 'clamp(15px,1.2vw,17px)', color: '#555', lineHeight: 1.7, maxWidth: '460px' }}>
+              fontSize: 'clamp(15px,1.2vw,17px)', color: '#AAAAAA', lineHeight: 1.7, maxWidth: '460px' }}>
               Mensen zoeken niet meer alleen via Google.
               Ze stellen hun vraag aan ChatGPT. Als jouw bedrijf daar niet verschijnt,
               gaan die klanten naar iemand anders.
@@ -91,35 +91,12 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Data strip */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)',
-          gap: '1px', background: '#141414', borderTop: '1px solid #141414' }}
-          className="data-strip">
-          {[
-            { num: '4.3', label: 'Perplexity score', sub: 'Casa Cavour · apr 2026' },
-            { num: '3.2', label: 'Gemini score', sub: 'Casa Cavour · apr 2026' },
-            { num: '8.2', label: 'AEO score', sub: 'RAB Romagna' },
-            { num: 'IT+NL', label: 'Actieve markten', sub: '2026' },
-          ].map((d, i) => (
-            <div key={i} style={{ background: '#0d0d0d', padding: 'clamp(16px,2vw,28px) clamp(12px,1.5vw,24px)' }}>
-              <div style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
-                fontSize: 'clamp(28px,3.5vw,48px)', letterSpacing: '0.02em',
-                color: i < 2 ? '#A0782A' : '#ffffff', lineHeight: 1 }}>{d.num}</div>
-              <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                fontSize: '9px', color: '#333', letterSpacing: '0.2em',
-                textTransform: 'uppercase', marginTop: '6px' }}>{d.label}</div>
-              <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '9px',
-                color: '#222', letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '2px' }}>{d.sub}</div>
-            </div>
-          ))}
-        </div>
       </div>
 
       <style>{`
         @media (max-width: 768px) {
           .hero-bottom { grid-template-columns: 1fr !important; }
           .hero-bottom > div:last-child { align-items: flex-start !important; }
-          .data-strip { grid-template-columns: repeat(2,1fr) !important; }
           .hero-h1 { font-size: clamp(36px, 8vw, 132px) !important; }
           .hero-cta { white-space: normal !important; text-align: center !important; width: 100% !important; box-sizing: border-box !important; }
         }
