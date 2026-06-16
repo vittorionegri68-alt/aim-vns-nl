@@ -1,4 +1,4 @@
-// Diensten.jsx — AI'm by VNS NL
+﻿// Diensten.jsx — AI'm by VNS NL
 import { useEffect, useRef } from 'react'
 
 const pakketten = [
@@ -88,7 +88,7 @@ export default function Diensten() {
                 color: '#444', lineHeight: 1.7, marginBottom: '1.5rem' }}>{p.desc}</p>
               <ul style={{ listStyle: 'none', marginBottom: '2rem', flex: 1 }}>
                 {p.incluso.map((item, j) => (
-                  <li key={j} style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#555',
+                  <li key={j} style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA',
                     padding: '6px 0', borderBottom: '1px solid #141414', display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <span style={{ color: '#A0782A', fontSize: '10px' }}>—</span>{item}
                   </li>

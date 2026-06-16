@@ -39,7 +39,7 @@ export default function FAQ() {
               {open === i && (
                 <div style={{ paddingBottom: 'clamp(16px,2vw,24px)' }}>
                   <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400,
-                    fontSize: 'clamp(13px,1vw,15px)', color: '#555', lineHeight: 1.7 }}>{item.a}</p>
+                    fontSize: 'clamp(13px,1vw,15px)', color: '#AAAAAA', lineHeight: 1.7 }}>{item.a}</p>
                 </div>
               )}
             </div>

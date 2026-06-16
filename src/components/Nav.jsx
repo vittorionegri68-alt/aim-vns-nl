@@ -1,4 +1,4 @@
-// Nav.jsx — AI'm by VNS NL
+﻿// Nav.jsx — AI'm by VNS NL
 import { useState, useEffect } from 'react'
 import { config } from '../config.js'
 
@@ -47,7 +47,7 @@ export default function Nav() {
           {links.map(l => (
             <a key={l.href} href={l.href} style={{
               fontFamily: "'Inter', sans-serif", fontWeight: 700,
-              fontSize: '11px', letterSpacing: '0.15em', color: '#555', textTransform: 'uppercase', transition: 'color 0.2s',
+              fontSize: '11px', letterSpacing: '0.15em', color: '#AAAAAA', textTransform: 'uppercase', transition: 'color 0.2s',
             }}
             onMouseEnter={e => e.target.style.color = '#fff'}
             onMouseLeave={e => e.target.style.color = '#555'}
@@ -60,7 +60,7 @@ export default function Nav() {
             title="Stuur ons een WhatsApp-bericht"
             style={{ display: 'flex', alignItems: 'center', gap: '6px',
               fontFamily: "'Inter', sans-serif", fontWeight: 700,
-              fontSize: '11px', letterSpacing: '0.1em', color: '#555',
+              fontSize: '11px', letterSpacing: '0.1em', color: '#AAAAAA',
               textTransform: 'uppercase', transition: 'color 0.2s', textDecoration: 'none' }}
             onMouseEnter={e => e.currentTarget.style.color = '#25D366'}
             onMouseLeave={e => e.currentTarget.style.color = '#555'}>

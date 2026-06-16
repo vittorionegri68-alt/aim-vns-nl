@@ -37,7 +37,7 @@ export default function Contact() {
               <span style={{ color: '#A0782A' }}>ER VOOR STAAT.</span>
             </h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px',
-              color: '#555', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '360px' }}>
+              color: '#AAAAAA', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '360px' }}>
               De eerste analyse is gratis en zonder verplichtingen.
               We vertellen je hoe zichtbaar je bent op ChatGPT op dit moment,
               in gewone taal en zonder vakjargon.
@@ -73,7 +73,7 @@ export default function Contact() {
                 </svg>
                 <div>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                    fontSize: '11px', color: '#555', letterSpacing: '0.15em',
+                    fontSize: '11px', color: '#AAAAAA', letterSpacing: '0.15em',
                     textTransform: 'uppercase', marginBottom: '2px' }}>E-mail</div>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px',
                     color: '#888' }}>{config.brand.email}</div>
@@ -91,7 +91,7 @@ export default function Contact() {
                 </svg>
                 <div>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                    fontSize: '11px', color: '#555', letterSpacing: '0.15em',
+                    fontSize: '11px', color: '#AAAAAA', letterSpacing: '0.15em',
                     textTransform: 'uppercase', marginBottom: '2px' }}>LinkedIn</div>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px',
                     color: '#888' }}>AI'm by VNS</div>
@@ -106,7 +106,7 @@ export default function Contact() {
                 <div style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
                   fontSize: '32px', color: '#A0782A', textTransform: 'uppercase',
                   letterSpacing: '0.02em', marginBottom: '1rem' }}>Bericht ontvangen</div>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', color: '#555' }}>
+                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', color: '#AAAAAA' }}>
                   We nemen binnen 48 uur contact met je op. Geen vakjargon, gewoon een duidelijk gesprek.
                 </p>
               </div>

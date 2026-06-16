@@ -110,7 +110,7 @@ export default function Diensten() {
               <ul style={{ listStyle: 'none', marginBottom: '2rem', flex: 1 }}>
                 {p.incluso.map((item, j) => (
                   <li key={j} style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px',
-                    color: '#555', padding: '6px 0', borderBottom: '1px solid #141414',
+                    color: '#AAAAAA', padding: '6px 0', borderBottom: '1px solid #141414',
                     display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <span style={{ color: '#A0782A', fontSize: '10px' }}>—</span>{item}
                   </li>

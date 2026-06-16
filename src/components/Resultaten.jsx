@@ -34,7 +34,7 @@ function Bar({ before, after, animate }) {
   return (
     <div style={{ marginBottom: '12px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-        <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#555',
+        <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#AAAAAA',
           letterSpacing: '0.1em', textTransform: 'uppercase' }}>Voor</span>
         <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#333' }}>{before}/10</span>
       </div>
@@ -110,7 +110,7 @@ export default function Resultaten() {
               {c.metriche.map((m, j) => (
                 <div key={j} style={{ marginBottom: '1.5rem' }}>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                    fontSize: '10px', color: '#555', letterSpacing: '0.2em',
+                    fontSize: '10px', color: '#AAAAAA', letterSpacing: '0.2em',
                     textTransform: 'uppercase', marginBottom: '8px' }}>{m.motore}</div>
                   <Bar before={m.before} after={m.after} animate={animate} />
                 </div>

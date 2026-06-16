@@ -1,4 +1,4 @@
-// Blog.jsx — AI'm by VNS NL
+﻿// Blog.jsx — AI'm by VNS NL
 import { useState, useRef } from 'react'
 import { posts } from '../data/posts.jsx'
 
@@ -21,7 +21,7 @@ function ArtikelUitgebreid({ post, onClose }) {
         <button onClick={onClose} style={{
           background: 'none', border: '1px solid #1A1A1A', cursor: 'pointer',
           fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '10px',
-          color: '#555', letterSpacing: '0.15em', textTransform: 'uppercase',
+          color: '#AAAAAA', letterSpacing: '0.15em', textTransform: 'uppercase',
           padding: '8px 14px', borderRadius: 0, flexShrink: 0, transition: 'all 0.2s',
         }}
         onMouseEnter={e => { e.currentTarget.style.borderColor = '#A0782A'; e.currentTarget.style.color = '#A0782A' }}
@@ -33,7 +33,7 @@ function ArtikelUitgebreid({ post, onClose }) {
         {post.contenuto.map((blocco, i) => {
           if (blocco.tipo === 'paragrafo') return (
             <p key={i} style={{ fontFamily: "'Inter', sans-serif",
-              fontSize: 'clamp(14px,1vw,16px)', color: '#555',
+              fontSize: 'clamp(14px,1vw,16px)', color: '#AAAAAA',
               lineHeight: 1.8, marginBottom: '1.5rem' }}>{blocco.testo}</p>
           )
           if (blocco.tipo === 'titoletto') return (
