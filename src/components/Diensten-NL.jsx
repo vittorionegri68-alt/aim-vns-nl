@@ -145,7 +145,7 @@ export default function Diensten() {
             </div>
           ))}
         </div>
-        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#333',
+        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#AAAAAA',
           letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem', textAlign: 'center' }}>
           Alle prijzen zijn exclusief BTW · Extra taal 100 EUR · Minimale looptijd 12 maanden voor Growth en Pro
         </p>

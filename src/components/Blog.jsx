@@ -10,7 +10,7 @@ function ArtikelUitgebreid({ post, onClose }) {
         alignItems: 'flex-start', gap: '16px', marginBottom: '2rem' }}>
         <div>
           <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '9px',
-            color: '#333', letterSpacing: '0.2em', textTransform: 'uppercase',
+            color: '#AAAAAA', letterSpacing: '0.2em', textTransform: 'uppercase',
             marginBottom: '0.75rem' }}>{post.categoria} · {post.data}</div>
           <h2 style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
             fontSize: 'clamp(22px,2.5vw,36px)', color: '#ffffff',
@@ -136,7 +136,7 @@ export default function Blog() {
               onMouseLeave={e => e.currentTarget.style.borderTopColor = 'transparent'}
               >
                 <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                  fontSize: '9px', color: '#333', letterSpacing: '0.2em',
+                  fontSize: '9px', color: '#AAAAAA', letterSpacing: '0.2em',
                   textTransform: 'uppercase', marginBottom: '0.75rem' }}>
                   {p.categoria} · {p.data}
                 </div>

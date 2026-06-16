@@ -115,7 +115,7 @@ export default function Diensten() {
             </div>
           ))}
         </div>
-        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#333',
+        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#AAAAAA',
           letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem', textAlign: 'center' }}>
           Prijzen op aanvraag · NL en IT · Neem contact op voor een offerte
         </p>
