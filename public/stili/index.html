@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beschikbare stijlen — AI'm by VNS</title>
+  <meta name="description" content="18 websiteontwerp-stijlen. Geen templates: elke site wordt van nul af aan gebouwd op het karakter van jouw bedrijf." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #080808; color: #ffffff;
+      font-family: 'Inter', sans-serif; font-size: 16px;
+      line-height: 1.6; overflow-x: hidden;
+    }
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #080808; border-bottom: 1px solid #141414;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(20px, 5vw, 80px); height: 64px;
+    }
+    .nav-logo { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; color: #ffffff; }
+    .nav-logo span { color: #A0782A; }
+    .nav-back { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #AAAAAA; text-decoration: none; transition: color 0.2s; }
+    .nav-back:hover { color: #ffffff; }
+    .hero { padding: clamp(48px, 8vw, 100px) clamp(20px, 5vw, 80px) clamp(40px, 6vw, 80px); border-bottom: 1px solid #141414; }
+    .hero-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: #A0782A; margin-bottom: 20px; }
+    .hero-title { font-family: 'Oswald', sans-serif; font-size: clamp(36px, 6vw, 72px); font-weight: 700; text-transform: uppercase; line-height: 1.05; letter-spacing: 0.02em; margin-bottom: 24px; }
+    .hero-title span { color: #A0782A; }
+    .hero-desc { font-size: clamp(15px, 1.8vw, 18px); color: #AAAAAA; max-width: 640px; line-height: 1.7; margin-bottom: 32px; }
+    .notice { display: inline-flex; align-items: flex-start; gap: 12px; background: #0d0d0d; border: 1px solid #1A1A1A; border-left: 3px solid #A0782A; padding: 16px 20px; max-width: 640px; }
+    .notice-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+    .notice-text { font-size: 13px; color: #AAAAAA; line-height: 1.6; }
+    .notice-text strong { color: #ffffff; font-weight: 700; }
+    .mockup-link-block { margin-top: 32px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #080808; background: #A0782A; padding: 14px 28px; text-decoration: none; display: inline-block; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-note { font-size: 12px; color: #AAAAAA; }
+    .section-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: #A0782A; padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 80px) 0; margin-bottom: 32px; }
+    .grid { padding: 0 clamp(20px, 5vw, 80px) clamp(60px, 8vw, 100px); display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2px; }
+    .card { background: #0d0d0d; border: 1px solid #141414; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.2s; }
+    .card:hover { border-color: #A0782A; }
+    .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; display: block; background: #1A1A1A; }
+    .card-img-placeholder { width: 100%; aspect-ratio: 16/9; background: #1A1A1A; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 48px; font-weight: 700; color: #2a2a2a; text-transform: uppercase; }
+    .card-body { padding: 20px 24px 24px; flex: 1; display: flex; flex-direction: column; }
+    .card-num { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; color: #A0782A; margin-bottom: 6px; }
+    .card-name { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #ffffff; margin-bottom: 10px; line-height: 1.2; }
+    .card-desc { font-size: 13px; color: #AAAAAA; line-height: 1.6; margin-bottom: 14px; flex: 1; }
+    .card-target { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #AAAAAA; border-top: 1px solid #141414; padding-top: 12px; }
+    .card-target span { color: #ffffff; font-weight: 400; text-transform: none; letter-spacing: 0; }
+    .live-section { padding: 0 clamp(20px, 5vw, 80px) clamp(60px, 8vw, 100px); border-top: 1px solid #141414; padding-top: clamp(40px, 6vw, 72px); }
+    .live-intro { max-width: 640px; margin-bottom: 40px; }
+    .live-intro h2 { font-family: 'Oswald', sans-serif; font-size: clamp(24px, 3vw, 36px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 12px; }
+    .live-intro h2 span { color: #A0782A; }
+    .live-intro p { font-size: 15px; color: #AAAAAA; line-height: 1.7; }
+    .live-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2px; }
+    .live-card { background: #0d0d0d; border: 1px solid #141414; padding: 24px; text-decoration: none; display: block; transition: border-color 0.2s; }
+    .live-card:hover { border-color: #A0782A; }
+    .live-card-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #A0782A; margin-bottom: 8px; }
+    .live-card-title { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase; color: #ffffff; margin-bottom: 8px; }
+    .live-card-desc { font-size: 13px; color: #AAAAAA; line-height: 1.6; margin-bottom: 16px; }
+    .live-card-url { font-size: 12px; font-weight: 700; color: #A0782A; text-transform: lowercase; letter-spacing: 0.02em; }
+    .ig-note { margin-top: 40px; background: #0d0d0d; border: 1px solid #141414; border-left: 3px solid #A0782A; padding: 20px 24px; max-width: 560px; }
+    .ig-note-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #A0782A; margin-bottom: 8px; }
+    .ig-note p { font-size: 13px; color: #AAAAAA; line-height: 1.6; }
+    .ig-note a { color: #ffffff; text-decoration: underline; text-underline-offset: 3px; }
+    .cta-section { background: #0d0d0d; border-top: 1px solid #141414; padding: clamp(48px, 7vw, 96px) clamp(20px, 5vw, 80px); text-align: center; }
+    .cta-section h2 { font-family: 'Oswald', sans-serif; font-size: clamp(28px, 4vw, 48px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 16px; }
+    .cta-section h2 span { color: #A0782A; }
+    .cta-section p { font-size: 15px; color: #AAAAAA; max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+    .footer { border-top: 1px solid #141414; padding: 24px clamp(20px, 5vw, 80px); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-brand { font-family: 'Oswald', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #AAAAAA; }
+    .footer-brand span { color: #A0782A; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 12px; color: #AAAAAA; text-decoration: none; text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.2s; }
+    .footer-links a:hover { color: #ffffff; }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      .live-grid { grid-template-columns: 1fr; }
+      .mockup-link-block { flex-direction: column; align-items: flex-start; }
+      .footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="https://nl.aim-vns.com" class="nav-logo"><span>AI'</span>M BY VNS</a>
+    <a href="https://nl.aim-vns.com" class="nav-back">&#8592; Terug naar de site</a>
+  </nav>
+
+  <section class="hero">
+    <p class="hero-eyebrow">Maatwerk design</p>
+    <h1 class="hero-title">
+      Geen templates.<br>
+      <span>Elke site</span> is uniek.
+    </h1>
+    <p class="hero-desc">
+      We werken niet met kant-en-klare templates. Elke site wordt van nul af aan gebouwd op het karakter van jouw bedrijf: palet, typografie, structuur en inhoud worden voor jou gekozen, niet gekopieerd uit een bestaand schema.
+    </p>
+    <p class="hero-desc" style="margin-top: -12px;">
+      Hieronder vind je onze 18 basisstijlen. Dit zijn visuele referentiepunten, geen starre kaders: kleuren, lettertypen en opmaak worden volledig aangepast tijdens de onboarding-fase.
+    </p>
+
+    <div class="notice">
+      <span class="notice-icon">🖥</span>
+      <p class="notice-text">
+        <strong>Beste weergave op een pc.</strong> De interactieve mockups zijn ontworpen voor grotere schermen. De site die we voor jou bouwen werkt perfect op elk apparaat.
+      </p>
+    </div>
+
+    <div class="mockup-link-block">
+      <a href="https://nl.aim-vns.com/mockups" class="btn-primary" target="_blank" rel="noopener">
+        Bekijk interactieve mockups
+      </a>
+      <span class="btn-note">Open op pc voor het beste resultaat</span>
+    </div>
+  </section>
+
+  <p class="section-label">18 stijlen beschikbaar — volledig aanpasbaar</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="/stili/img/01.png" alt="Stijl 01 High Performance Minimal" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">01</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 01</p>
+        <h2 class="card-name">High Performance Minimal</h2>
+        <p class="card-desc">Dashboard-stijl met data op de voorgrond. Strak, gezaghebbend, prestatiegericht.</p>
+        <p class="card-target">Ideaal voor: <span>SaaS, digitale bureaus, B2B-consultancy, tech</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/02.png" alt="Stijl 02 Minimal Luxury Editorial" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">02</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 02</p>
+        <h2 class="card-name">Minimal Luxury Editorial</h2>
+        <p class="card-desc">Elegantie zonder overdaad. Witruimte, verfijnde typografie, sfeer van een luxetijdschrift.</p>
+        <p class="card-target">Ideaal voor: <span>Boutiquehotels, juweliers, high-end mode, luxe vastgoed</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/03.png" alt="Stijl 03 Brutalistisch" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">03</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 03</p>
+        <h2 class="card-name">Brutalistisch</h2>
+        <p class="card-desc">Sterke visuele identiteit, scherpe contrasten, geen esthetisch compromis. Voor merken die herinnerd willen worden.</p>
+        <p class="card-target">Ideaal voor: <span>Creatieve studios, digitale bureaus, fotografen, streetwear</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/04.png" alt="Stijl 04 Mediterranean Warmth" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">04</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 04</p>
+        <h2 class="card-name">Mediterranean Warmth</h2>
+        <p class="card-desc">Mediterrane warmte, natuurlijke materialen, rustig ritme. Gemaakt voor eten, wijn en slow toerisme.</p>
+        <p class="card-target">Ideaal voor: <span>Agriturismos, restaurants, boerderijverblijven, ervaringsgericht toerisme</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/05.png" alt="Stijl 05 Boutique Bold" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">05</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 05</p>
+        <h2 class="card-name">Boutique Bold</h2>
+        <p class="card-desc">Tweetonig contrast, directe visuele impact. Trekt de aandacht zonder om toestemming te vragen.</p>
+        <p class="card-target">Ideaal voor: <span>Kappers, barbiers, boutique sportscholen, stedelijke mode</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/06.png" alt="Stijl 06 Redactioneel" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">06</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 06</p>
+        <h2 class="card-name">Redactioneel</h2>
+        <p class="card-desc">Professionele advertorial-opmaak. Autoriteit, leesbaarheid en direct vertrouwen.</p>
+        <p class="card-target">Ideaal voor: <span>Advocaten, accountants, consultants, professionele kantoren</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/07.png" alt="Stijl 07 Nature Escape" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">07</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 07</p>
+        <h2 class="card-name">Nature Escape</h2>
+        <p class="card-desc">Groen, ademruimte, verbinding met de natuur. Roept ontsnapping, stilte en authenticiteit op.</p>
+        <p class="card-target">Ideaal voor: <span>Wellnessretreat, glamping, outdooractiviteiten, yoga</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/08.png" alt="Stijl 08 Italian Heritage" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">08</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 08</p>
+        <h2 class="card-name">Italian Heritage</h2>
+        <p class="card-desc">Vakmanschap, geschiedenis, materiaal. Voor wie iets wil doorgeven, niet alleen verkopen.</p>
+        <p class="card-target">Ideaal voor: <span>Ambacht, historische winkels, DOP/IGP-producten, antiek</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/09.png" alt="Stijl 09 Digital Nomad Friendly" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">09</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 09</p>
+        <h2 class="card-name">Digital Nomad Friendly</h2>
+        <p class="card-desc">Functioneel, modern, gebouwd voor het verbonden leven. Duidelijke informatie, moeiteloos boeken.</p>
+        <p class="card-target">Ideaal voor: <span>Co-living, co-working, accommodatie voor remote werkers</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/10.png" alt="Stijl 10 Family-Friendly Comfort" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">10</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 10</p>
+        <h2 class="card-name">Family-Friendly Comfort</h2>
+        <p class="card-desc">Warm, uitnodigend, geruststellend. Communiceert veiligheid en zorg voor reizende gezinnen.</p>
+        <p class="card-target">Ideaal voor: <span>Gezins-B&B's, vakantiewoningen, parken, boerderijverblijven</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/11.png" alt="Stijl 11 High-End Modern Retreat" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">11</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 11</p>
+        <h2 class="card-name">High-End Modern Retreat</h2>
+        <p class="card-desc">Hedendaagse luxe, verfijnde details, stille exclusiviteit. Geen geschreeuw, maar een fluistering.</p>
+        <p class="card-target">Ideaal voor: <span>Luxe villa's, privé-spa's, designhotels, exclusieve retreats</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/12.png" alt="Stijl 12 Organisch" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">12</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 12</p>
+        <h2 class="card-name">Organisch</h2>
+        <p class="card-desc">Aarde, biologisch, bewustzijn. Een esthetiek die past bij de waarden van wie haar kiest.</p>
+        <p class="card-target">Ideaal voor: <span>Biologische producenten, kruideniers, yogaretreat, zero-waste</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/13.png" alt="Stijl 13 Azure Lido" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">13</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 13</p>
+        <h2 class="card-name">Azure Lido</h2>
+        <p class="card-desc">Zee, zon, lichtheid. Roept vakantie op zonder te vervallen in het cliché van zand en golven.</p>
+        <p class="card-target">Ideaal voor: <span>Strandclubs, kusttoerisme, bootverhuur</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/14.png" alt="Stijl 14 Earth Rustic" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">14</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 14</p>
+        <h2 class="card-name">Earth Rustic</h2>
+        <p class="card-desc">Aarde, wijn, wortels. Communiceert streek met waardigheid, zonder boerenromantiek.</p>
+        <p class="card-target">Ideaal voor: <span>Wijnboeren, olijfolieproducenten, landelijke domeinen</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/15.png" alt="Stijl 15 Risograph" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">15</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 15</p>
+        <h2 class="card-name">Risograph</h2>
+        <p class="card-desc">Alternatieve print, indiecultuur, authentiek karakter. Voor wie digitale uniformiteit weigert.</p>
+        <p class="card-target">Ideaal voor: <span>Craft-brouwerijen, koffiebars, platenwinkel, onafhankelijke merken</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/16.png" alt="Stijl 16 Kinetisch" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">16</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 16</p>
+        <h2 class="card-name">Kinetisch</h2>
+        <p class="card-desc">Energie, beweging, precisie. Communiceert snelheid en professionaliteit in sport en beeldende media.</p>
+        <p class="card-target">Ideaal voor: <span>Fotografen, sportscholen, evenementenbureaus, personal trainers</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/17.png" alt="Stijl 17 Cinematic Scroll" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">17</div>
+      <div class="card-body">
+        <p class="card-num">Stijl 17</p>
+        <h2 class="card-name">Cinematic Scroll</h2>
+        <p class="card-desc">Cinematografisch scrollen, meeslepende sfeer. De browse-ervaring wordt onderdeel van het product.</p>
+        <p class="card-target">Ideaal voor: <span>Premium resorts, meeslepende ervaringen, luxe lifestyle-merken</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/stili/img/bauhaus.png" alt="Stijl Extra Bauhaus" class="card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="card-img-placeholder" style="display:none;">★</div>
+      <div class="card-body">
+        <p class="card-num">Extra stijl</p>
+        <h2 class="card-name">Bauhaus</h2>
+        <p class="card-desc">Zuivere geometrie, vorm volgt functie. Een geavanceerde stijl voor wie weet wat hij wil en verminderde leesbaarheid accepteert.</p>
+        <p class="card-target">Ideaal voor: <span>Architectenbureaus, galeries, designers, typografen</span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="live-section">
+    <div class="live-intro">
+      <h2>Sites <span>al online</span></h2>
+      <p>Geen mockups: echte sites, gebouwd met hetzelfde systeem, live te bekijken. Elke site is op maat ontworpen voor het bedrijf dat het vertegenwoordigt.</p>
+    </div>
+
+    <div class="live-grid">
+      <a href="https://www.casa-cavour.com" class="live-card" target="_blank" rel="noopener">
+        <p class="live-card-label">Vakantiewoning · 3 talen</p>
+        <p class="live-card-title">Casa Cavour</p>
+        <p class="live-card-desc">Historische vakantiewoning in Bertinoro, Italië. Beschikbaar in het Italiaans, Engels en Nederlands met volledige AI-optimalisatie.</p>
+        <p class="live-card-url">casa-cavour.com ↗</p>
+      </a>
+      <a href="https://garibaldina-75.romagna-affitti-brevi.it" class="live-card" target="_blank" rel="noopener">
+        <p class="live-card-label">Vakantieappartement · 2 talen</p>
+        <p class="live-card-title">Garibaldina 75</p>
+        <p class="live-card-desc">Appartement in Romagna. Beschikbaar in het Italiaans en Engels, gebouwd voor AI-zoekmachines.</p>
+        <p class="live-card-url">garibaldina-75.romagna-affitti-brevi.it ↗</p>
+      </a>
+      <a href="https://samilla.romagna-affitti-brevi.it" class="live-card" target="_blank" rel="noopener">
+        <p class="live-card-label">Luxe loft · 2 talen</p>
+        <p class="live-card-title">Samilla</p>
+        <p class="live-card-desc">Luxe loft in Romagna. Verfijnd design, premium positionering, twee talen.</p>
+        <p class="live-card-url">samilla.romagna-affitti-brevi.it ↗</p>
+      </a>
+    </div>
+
+    <div class="ig-note">
+      <p class="ig-note-label">Aanvullende dienst</p>
+      <p>We bouwen ook landingspagina's voor Instagram-profielen, geoptimaliseerd voor conversie vanuit social. <a href="https://links.casa-cavour.com" target="_blank" rel="noopener">Bekijk een live voorbeeld</a>.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Klaar om jouw<br><span>stijl te kiezen?</span></h2>
+    <p>Laten we praten: in 30 minuten vinden we samen de juiste visuele richting voor jouw bedrijf.</p>
+    <a href="https://nl.aim-vns.com/#contact" class="btn-primary">Boek een gratis gesprek</a>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-brand"><span>AI'</span>M BY VNS</span>
+    <nav class="footer-links">
+      <a href="https://nl.aim-vns.com">Home</a>
+      <a href="https://nl.aim-vns.com/resources">Bronnen</a>
+      <a href="https://nl.aim-vns.com/privacy.html">Privacy</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
