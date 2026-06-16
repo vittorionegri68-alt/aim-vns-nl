@@ -1,4 +1,4 @@
-// AI'm by VNS — config.js (NL)
+﻿// AI'm by VNS — config.js (NL)
 // URL bijwerken na Vercel deploy
 
 export const config = {
@@ -52,7 +52,7 @@ export const config = {
       recede2:  "#1f1f1f",
       gold:     "#A0782A",
       white:    "#ffffff",
-      muted:    "#555555",
+      muted:    "#AAAAAA",
       muted2:   "#444444",
     },
     fonts: {
