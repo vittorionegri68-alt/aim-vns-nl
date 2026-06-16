@@ -1,24 +1,24 @@
-// SitiWeb.jsx — AI'm by VNS NL
-// v1 — Maatwerk design sectie met stijlen link en live portfolio
+// SitiWeb.jsx â AI'm by VNS NL
+// v1 â Maatwerk design sectie met stijlen link en live portfolio
 import { useEffect, useRef } from 'react'
 
 const sitiLive = [
   {
-    label: 'Vakantiewoning · 3 talen',
+    label: 'Vakantiewoning Â· 3 talen',
     title: 'Casa Cavour',
-    desc: 'Historische vakantiewoning in Bertinoro, Italië. Beschikbaar in het Italiaans, Engels en Nederlands met volledige AI-optimalisatie.',
+    desc: 'Historische vakantiewoning in Bertinoro, ItaliÃ«. Beschikbaar in het Italiaans, Engels en Nederlands met volledige AI-optimalisatie.',
     url: 'https://www.casa-cavour.com',
     domain: 'casa-cavour.com',
   },
   {
-    label: 'Vakantieappartement · 2 talen',
+    label: 'Vakantieappartement Â· 2 talen',
     title: 'Garibaldina 75',
     desc: 'Appartement in Romagna. Beschikbaar in het Italiaans en Engels, gebouwd voor AI-zoekmachines.',
     url: 'https://garibaldina-75.romagna-affitti-brevi.it',
     domain: 'garibaldina-75.romagna-affitti-brevi.it',
   },
   {
-    label: 'Luxe loft · 2 talen',
+    label: 'Luxe loft Â· 2 talen',
     title: 'Samilla',
     desc: 'Luxe loft in Romagna. Verfijnd design, premium positionering, twee talen.',
     url: 'https://samilla.romagna-affitti-brevi.it',
@@ -106,21 +106,7 @@ export default function SitiWeb() {
               >
                 Bekijk 18 stijlen
               </a>
-              <a
-                href="/mockups"
-                style={{
-                  fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                  fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em',
-                  color: '#A0782A', background: 'transparent',
-                  padding: '14px 0', textDecoration: 'none', display: 'inline-block',
-                  borderBottom: '1px solid #A0782A',
-                  transition: 'opacity 0.2s',
-                }}
-                onMouseOver={e => e.currentTarget.style.opacity = '0.7'}
-                onMouseOut={e => e.currentTarget.style.opacity = '1'}
-              >
-                Interactieve mockups
-              </a>
+
             </div>
           </div>
         </div>
@@ -175,7 +161,7 @@ export default function SitiWeb() {
               <div style={{
                 fontFamily: "'Inter', sans-serif", fontWeight: 700,
                 fontSize: '11px', color: '#A0782A', letterSpacing: '0.05em',
-              }}>{s.domain} ↗</div>
+              }}>{s.domain} â</div>
             </a>
           ))}
         </div>
