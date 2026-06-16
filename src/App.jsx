@@ -3,6 +3,7 @@ import LangBanner from './components/LangBanner.jsx'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
+import SitiWeb from './components/SitiWeb.jsx'
 import Resultaten from './components/Resultaten.jsx'
 import Diensten from './components/Diensten-NL.jsx'
 import FAQ from './components/FAQ.jsx'
@@ -18,6 +19,7 @@ export default function App() {
       <main>
         <Hero />
         <HowItWorks />
+        <SitiWeb />
         <Resultaten />
         <Diensten />
         <FAQ />
