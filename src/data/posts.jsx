@@ -64,7 +64,7 @@ export const posts = [
     }
   ],
   "attivo": true
-}
+},
   {
     id: "geo-audit-score-vs-echte-zichtbaarheid-2026",
     titolo: "83/100 op de GEO-audit. Nergens te vinden op Perplexity. Wat ontbreekt er echt.",
