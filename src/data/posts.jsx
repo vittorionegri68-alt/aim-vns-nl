@@ -3,6 +3,68 @@
 // Bijwerken met N8N blog workflow na livegang
 
 export const posts = [
+{
+  "id": "aim-2026-06-30-nl",
+  "titolo": "Waarom verschijnt mijn website niet in Gemini antwoorden? Praktische AI-zichtbaarheid gids voor kleine ondernemingen",
+  "data": "2026-06-29",
+  "categoria": "GEO/AEO",
+  "sommario": "Ontdek waarom Gemini jouw website negeert en hoe je AI-zichtbaarheid verbetert zonder marketingteam. Concrete GEO optimalisatie strategieën om gevonden worden op AI-zoekmachines.",
+  "contenuto": [
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Jan heeft een bloeiend adviesbureau in Utrecht. Zijn website scoort goed in Google, hij publiceert regelmatig vakartikelen en heeft uitstekende klantbeoordelingen. Toch komt zijn naam nooit naar voren wanneer een potentiële klant Gemini vraagt 'Wie kan mij helpen met fiscaal advies in Utrecht?'. De frustratie is begrijpelijk: jarenlang digitale zichtbaarheid opgebouwd, maar volledig onzichtbaar voor AI-zoekmachines." 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Uit recent onderzoek blijkt dat 81% van de kleine bedrijven AI-tools gebruikt, maar de meesten hebben geen idee hoe ze door diezelfde tools gevonden kunnen worden. AI-zichtbaarheid vereist een andere aanpak dan traditionele SEO, en kleine ondernemingen zonder marketingteam lopen het risico buitengesloten te worden van een steeds strategischer kanaal." 
+    },
+    { 
+      "tipo": "titoletto", 
+      "testo": "Hoe Gemini werkelijk naar informatie zoekt" 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Anders dan Google Search indexeert Gemini niet simpelweg zoekwoorden. Het analyseert semantische inhoud, geeft prioriteit aan gestructureerde en gezaghebbende bronnen, en neigt pagina's met gefragmenteerde of te commerciële informatie over te slaan. Om gevonden worden op ChatGPT, Perplexity of Gemini vereist een GEO optimalisatie strategie die heldere content, gestructureerde data en verifieerbare autoriteitsignalen combineert." 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Een veelgemaakte fout is denken dat een goede SEO-ranking voldoende is. In werkelijkheid waarderen AI-zoekmachines pagina's die specifieke vragen beantwoorden, verifieerbare feitelijke gegevens bevatten en semantische markup zoals schema.org gebruiken. Als jouw website een statische brochure is, zal Gemini deze waarschijnlijk overslaan ten gunste van meer informatieve content." 
+    },
+    { 
+      "tipo": "titoletto", 
+      "testo": "Twee praktische acties die je vandaag kunt uitvoeren (zonder marketingteam)" 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Eerste tip: transformeer minstens drie pagina's van je website in antwoorden op echte klantvragen. Niet 'Fiscale adviesdiensten', maar 'Wat kost een belastingaangifte voor een zzp'er?'. Gebruik directe taal, voeg concrete gegevens toe (prijzen, termijnen, vereisten) en citeer waar mogelijk verifieerbare bronnen. Dit is precies het type content waar Gemini naar zoekt bij het beantwoorden van gebruikersvragen." 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Tweede tip: voeg schema.org markup toe voor minimaal je bedrijf (LocalBusiness of ProfessionalService), belangrijkste diensten en FAQ's. Je kunt gratis tools gebruiken zoals Google's Schema Markup Generator. Hoewel technische implementatie complex lijkt, vereenvoudigen WordPress plugins of modules voor grote CMS-platforms het proces aanzienlijk. Dit gestructureerde signaal helpt AI-zoekmachines begrijpen wie je bent en wat je aanbiedt." 
+    },
+    { 
+      "tipo": "titoletto", 
+      "testo": "Wanneer je professionele AI-zichtbaarheidsanalyse nodig hebt" 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Als je deze maatregelen al hebt geïmplementeerd maar je website nog steeds door Gemini wordt genegeerd, kan er een dieper probleem zijn: dubbele content, technische conflicten, gebrek aan externe citaties of tegenstrijdige signalen in je online aanwezigheid. Tools zoals AI'm by VNS analyseren je werkelijke zichtbaarheid op ChatGPT, Perplexity en Gemini, en identificeren precies waar en waarom je niet verschijnt. Gevalideerd op tientallen praktijkcases in Nederland en Italië, levert het systeem concrete rapporten en geprioriteerde acties, speciaal ontworpen voor kleine ondernemingen zonder marketingteam." 
+    },
+    { 
+      "tipo": "titoletto", 
+      "testo": "AI-zichtbaarheid is geen luxe, het is digitaal overleven" 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Cijfers uit 2025 tonen dat slechts 15,7% van de kleine bedrijven actief AI-technologieën gebruikt, maar de trend groeit gestaag. Tegelijkertijd gebruiken steeds meer consumenten en bedrijven ChatGPT, Gemini en Perplexity als eerste zoekpunt, waarbij Google volledig wordt omzeild. Onzichtbaar zijn op deze kanalen betekent concreet zakelijke kansen mislopen, vooral voor lokale dienstverleners en professionals die afhankelijk zijn van digitale mond-tot-mondreclame." 
+    },
+    { 
+      "tipo": "paragrafo", 
+      "testo": "Als jouw website niet verschijnt in Gemini antwoorden, is het geen onoplosbaar technisch probleem: het is een optimalisatiekloof die je kunt dichten met gerichte acties. Begin met de twee praktische tips uit dit artikel, monitor de resultaten de komende weken en overweeg indien nodig een professionele analyse. Digitale zichtbaarheid in 2026 wordt ook gewonnen op AI-zoekmachines, en kleine ondernemingen kunnen het zich niet veroorloven buiten spel te blijven." 
+    }
+  ],
+  "attivo": true
+}
   {
     id: "geo-audit-score-vs-echte-zichtbaarheid-2026",
     titolo: "83/100 op de GEO-audit. Nergens te vinden op Perplexity. Wat ontbreekt er echt.",
