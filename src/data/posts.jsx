@@ -4,6 +4,100 @@
 
 export const posts = [
 {
+  "id": "aim-2026-07-5-nl",
+  "titolo": "Wat is Schema.org en waarom kleine ondernemingen het nodig hebben voor AI-zichtbaarheid",
+  "data": "2026-07-27",
+  "categoria": "GEO/AEO",
+  "sommario": "Schema.org is het gedeelde vocabulaire waarmee AI-zoekmachines zoals ChatGPT, Perplexity en Gemini begrijpen wat jouw bedrijf doet. Voor kleine ondernemingen zonder marketingteam vergroot het implementeren van gestructureerde data de kans om gevonden en geciteerd te worden door AI dramatisch.",
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Sophie runt een klein boekhoudbedrijf in Rotterdam. Haar website ziet er professioneel uit, ze schrijft nuttige artikelen over belastingtips, maar wanneer potentiële klanten ChatGPT of Perplexity vragen om een lokale boekhouder aan te bevelen, verschijnt haar naam nooit. Het probleem? AI-zoekmachines kunnen niet uitvogelen wie ze is, wat ze doet of waar ze actief is, omdat haar site de taal mist die machines begrijpen: Schema.org."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Schema.org is een gedeeld vocabulaire ontwikkeld door Google, Bing, Yahoo en Yandex waarmee websites hun inhoud nauwkeurig kunnen labelen. Ontstaan in 2011 met 297 klassen, omvat het nu meer dan 811 types om mensen, producten, evenementen, organisaties, artikelen en nog veel meer te beschrijven. Dankzij gestructureerde data kunnen AI-zoekmachines informatie betrouwbaar lezen en interpreteren, en omzetten in contextuele antwoorden en gezaghebbende citaties."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Voor iedereen die zich richt op digitale zichtbaarheid voor kleine ondernemingen, is het begrijpen van Schema.org net zo essentieel geworden als kennis van SEO en contentmarketing. Het verschil? Terwijl traditionele SEO optimaliseert om gevonden te worden op Google, optimaliseert gestructureerde data om begrepen en geciteerd te worden door AI. En daar wordt de nieuwe strijd om AI-zichtbaarheid gewonnen of verloren."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Wat is Schema.org in eenvoudige termen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Stel je voor dat je een winkel binnenloopt waar alle producten zonder labels opgestapeld liggen. Je ziet wat er is, maar je weet niet precies wat elk artikel is, hoeveel het kost of waarvoor het dient. Schema.org is het digitale equivalent van productlabels: een systeem dat machines vertelt 'dit is een artikel, geschreven door deze persoon, gepubliceerd door dit bedrijf, op deze datum'. Volgens onderzoek geciteerd door Amicited gebruikt 72,6% van de pagina's die bovenaan Google ranken een vorm van schema-markup, een duidelijk teken dat zichtbare bedrijven deze praktijk al hebben toegepast."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Gestructureerde data wordt ingevoegd in de HTML-code van je site, meestal in JSON-LD formaat (de versie die de voorkeur heeft van Google en AI-zoekmachines), en blijft onzichtbaar voor menselijke bezoekers. Maar voor AI-zoekmachines zoals ChatGPT, Perplexity en Gemini zijn ze fundamenteel: ze maken het mogelijk om inhoud te koppelen aan precieze entiteiten, informatie-consistentie te verifiëren en betrouwbare bronnen te citeren."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Waarom Schema.org cruciaal is om gevonden te worden op ChatGPT en andere AI-zoekmachines"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Wanneer een gebruiker een AI-zoekmachine vraagt 'Wie is de beste loodgieter bij mij in de buurt?' of 'Hoe werkt de energiebelastingkorting 2026?', zoekt het systeem niet simpelweg naar zoekwoorden. Het moet context interpreteren, de autoriteit van bronnen verifiëren en een samenhangend antwoord opbouwen. Zoals Roberto Serra, GEO optimalisatie-expert, benadrukt in zijn artikel van juni 2026, gebruiken AI-zoekmachines 'gestructureerde data om de kans te vergroten dat een site wordt gebruikt als bron in gegenereerde antwoorden'."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Zonder Schema.org riskeert zelfs de beste content onzichtbaar te blijven voor AI. Met Schema.org kun je expliciet zeggen: 'Ik ben een lokaal bedrijf, ik werk in deze stad, ik bied deze diensten aan, ik heb deze recensies, deze artikelen zijn geschreven door geverifieerde experts'. Dit niveau van duidelijkheid is precies wat AI-zichtbaarheid vereist."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "De meest nuttige Schema.org types voor kleine ondernemingen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Je hoeft niet alle 811 bestaande schema-types te implementeren. Voor kleine ondernemingen zonder marketingteam zijn een paar strategische types voldoende. Organization en LocalBusiness zijn essentieel om te definiëren wie je bent, waar je actief bent en hoe je te contacteren bent. FAQPage helpt AI directe antwoorden te extraheren uit je veelgestelde vragen. Article en BlogPosting communiceren redactioneel gezag, vooral wanneer gekoppeld aan een Author-markup die de schrijver identificeert. Product en Service beschrijven wat je verkoopt, met prijzen, beschikbaarheid en recensies."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Een praktische tip: begin met Organization op je homepage en FAQPage op je servicepagina's. Dit zijn de twee schema's die AI'm by VNS het vaakst mist in AI-zichtbaarheidsaudits voor Nederlandse en Italiaanse MKB-bedrijven, en toch zijn ze ook het snelst te implementeren en leveren ze onmiddellijke impact op citaties in AI-zoekmachines."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Hoe Schema.org implementeren zonder ontwikkelaar te zijn"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Het goede nieuws is dat je geen programmeur hoeft te zijn. Als je WordPress gebruikt, voegen plugins zoals Yoast SEO of RankMath automatisch basis gestructureerde data in. Voor specifiekere schema's biedt Google de gratis Structured Data Markup Helper: je selecteert het inhoudstype, markeert informatie op de pagina, en de tool genereert kant-en-klare JSON-LD code om in je site te plakken."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Verifieer na implementatie altijd met Google Rich Results Test of Schema Markup Validator. Deze tools vertellen je of de code correct is en welke eigenschappen ontbreken. Een veelgemaakte fout is het vergeten van verplichte eigenschappen zoals 'name' of 'url' in Organization, waardoor de markup nutteloos wordt voor AI."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Impact op AI-zichtbaarheid meten: een eenvoudige methode"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Hoe kun je zien of Schema.org werkt? Een praktische methode voorgesteld door AILabsAudit: documenteer de belangrijkste vragen die je klanten stellen (bijvoorbeeld 'beste boekhouder Rotterdam' of 'hoe een belastingadviseur kiezen'). Stel deze vragen aan ChatGPT, Perplexity en Gemini voordat je gestructureerde data implementeert, en bewaar de antwoorden. Zes tot acht weken na implementatie, herhaal je dezelfde vragen en vergelijk: word je geciteerd? In welke context? Met welke informatie?"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Monitor tegelijkertijd rich snippets op Google: als FAQ, recensiesterren of bedrijfsdetails direct in zoekresultaten verschijnen, is dat een teken dat gestructureerde data ook voor traditionele SEO werkt. AI'm by VNS integreert dit type analyse in zijn dienst, waarbij systematisch de zichtbaarheid op ChatGPT, Perplexity en Gemini wordt gecontroleerd voor MKB-bedrijven die geen interne middelen hebben voor monitoring."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Schema.org als fundament van je GEO-strategie"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Schema.org is niet het enige element van GEO optimalisatie, maar het is zeker de technische basis. Zonder gestructureerde data lopen zelfs de beste content, authentieke recensies en merkautoriteit het risico niet correct geïnterpreteerd te worden door AI. Met Schema.org bouw je een directe brug tussen jouw aanbod en AI-zoekmachines, waardoor elk stukje informatie leesbaar, verifieerbaar en citeerbaar wordt."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Voor kleine ondernemingen betekent dit concurreren op gelijke voet met grotere bedrijven: je hebt geen toegewijd marketingteam nodig, slechts een paar goed geïmplementeerde markups en een duidelijke strategie. Als je wilt ontdekken hoe jouw bedrijf er vandaag uitziet voor AI-zoekmachines en welke gestructureerde data je eerst moet implementeren, biedt AI'm by VNS een AI-zichtbaarheidsaudit die precies is ontworpen voor wie geen tijd en middelen te verspillen heeft. Bezoek en.aim-vns.com en begin gevonden te worden door de AI die ertoe doet."
+    }
+  ],
+  "attivo": true
+},
+{
   "id": "aim-2026-06-30-nl",
   "titolo": "Waarom verschijnt mijn website niet in Gemini antwoorden? Praktische AI-zichtbaarheid gids voor kleine ondernemingen",
   "data": "2026-06-29",
