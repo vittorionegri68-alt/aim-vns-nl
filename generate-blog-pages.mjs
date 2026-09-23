@@ -256,35 +256,36 @@ function renderPage(post, idToSlug, idToPost) {
 
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
-      :root { --gold:#a0782a; --text:#1a1612; --textMid:#5a5248; --textSoft:#9a9088; --bg:#faf8f4; --border:rgba(160,120,42,0.18); }
+      :root { --gold:#a0782a; --text:#ffffff; --textMid:#aaaaaa; --textSoft:#777777; --bg:#080808; --border:#1a1a1a; }
       *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-      body{background:var(--bg);color:var(--text);font-family:'DM Sans',Arial,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;}
-      .wrap{max-width:720px;margin:0 auto;padding:3rem 1.5rem 5rem;}
-      .top-nav{font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
+      body{background:var(--bg);color:var(--textMid);font-family:'Inter',Arial,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased;}
+      .wrap{max-width:760px;margin:0 auto;padding:3rem 1.5rem 5rem;}
+      .top-nav{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:2.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
       .top-nav a{color:var(--gold);text-decoration:none;font-weight:700;}
-      .share-btn{background:none;border:1px solid var(--border);color:var(--textMid);font-family:inherit;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.45rem 1rem;cursor:pointer;}
+      .share-btn{background:none;border:1px solid var(--border);color:var(--textMid);font-family:'Inter',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:0.5rem 1rem;cursor:pointer;transition:all 0.2s;}
       .share-btn:hover{border-color:var(--gold);color:var(--gold);}
-      .cat{display:inline-block;font-size:0.68rem;letter-spacing:0.16em;color:var(--gold);text-transform:uppercase;border:1px solid var(--border);padding:0.2rem 0.6rem;margin-right:0.75rem;}
-      time{font-size:0.75rem;color:var(--textSoft);}
-      h1{font-family:Georgia,serif;font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.15;margin:1rem 0;}
-      .sommario{font-family:Georgia,serif;font-style:italic;color:var(--gold);font-size:1.05rem;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--border);}
-      h2{font-family:Georgia,serif;font-size:1.35rem;margin:2rem 0 0.6rem;}
-      p{color:var(--textMid);font-size:0.98rem;margin-bottom:1.1rem;}
-      .btn-link{display:inline-block;color:var(--gold);border:1.5px solid var(--gold);padding:0.55rem 1.1rem;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;margin:0.25rem 0.5rem 0.25rem 0;}
+      .cat{display:inline-block;font-family:'Inter',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;color:var(--gold);text-transform:uppercase;border:1px solid var(--border);padding:0.25rem 0.6rem;margin-right:0.75rem;}
+      time{font-size:0.72rem;color:var(--textSoft);letter-spacing:0.05em;}
+      h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1;letter-spacing:0.01em;text-transform:uppercase;color:var(--text);margin:1.25rem 0;}
+      .sommario{color:var(--gold);font-size:1.1rem;line-height:1.6;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--border);}
+      h2,h3{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1.15rem,2vw,1.5rem);text-transform:uppercase;letter-spacing:0.02em;color:var(--text);margin:2.5rem 0 0.8rem;}
+      p{color:var(--textMid);font-size:1rem;line-height:1.8;margin-bottom:1.3rem;}
+      .btn-link{display:inline-block;color:var(--gold);border:1px solid var(--gold);padding:0.6rem 1.4rem;font-family:'Inter',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;margin:0.25rem 0.5rem 0.25rem 0;transition:all 0.2s;}
+      .btn-link:hover{background:var(--gold);color:#000;}
       .inline-link{color:var(--gold);text-decoration:underline;text-decoration-color:rgba(160,120,42,0.4);text-underline-offset:2px;}
       .inline-link:hover{text-decoration-color:var(--gold);}
       .ig-cta{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;}
-      .ig-cta p{color:var(--textMid);font-size:0.92rem;margin-bottom:1rem;}
-      .ig-cta-icons{display:flex;justify-content:center;gap:1rem;}
-      .ig-cta-icons a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;color:var(--gold);text-decoration:none;transition:background 0.2s;}
-      .ig-cta-icons a:hover{background:rgba(160,120,42,0.1);}
+      .ig-cta p{color:var(--textMid);font-size:0.95rem;margin-bottom:1.2rem;}
       footer{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;}
-      footer a{color:var(--gold);text-decoration:none;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
-    .leggi-anche { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-    .leggi-anche h2 { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--textMid); margin-bottom: 0.8rem; font-weight: 700; }
-    .la-item { display: block; padding: 0.7rem 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; font-weight: 600; }
-    .la-item:hover { color: var(--gold); }
+      footer a{color:var(--gold);text-decoration:none;font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;}
+      .leggi-anche{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);}
+      .leggi-anche h2{font-family:'Inter',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--textMid);margin:0 0 1rem;font-weight:700;}
+      .la-item{display:block;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1rem,1.6vw,1.25rem);text-transform:uppercase;letter-spacing:0.02em;padding:0.85rem 0;border-bottom:1px solid var(--border);color:var(--text);text-decoration:none;transition:color 0.2s;}
+      .la-item:hover{color:var(--gold);}
     </style>
   </head>
   <body>
