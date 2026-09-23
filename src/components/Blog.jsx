@@ -26,6 +26,22 @@ function renderTestoConLink(testo) {
 }
 
 function ArtikelUitgebreid({ post, onClose }) {
+  const [condiviso, setCondiviso] = useState(false)
+  async function condividi() {
+    const url = `${window.location.origin}/post/${slugify(post.id)}.html`
+    if (navigator.share) {
+      try { await navigator.share({ title: post.titolo, text: `${post.sommario}\n\n${url}` }); return }
+      catch { return }
+    }
+    try {
+      await navigator.clipboard.writeText(url)
+      setCondiviso(true)
+      setTimeout(() => setCondiviso(false), 2000)
+    } catch {
+      window.prompt('Kopieer de link:', url)
+    }
+  }
+
   return (
     <div style={{ background: '#0a0a0a', borderTop: '2px solid #A0782A',
       padding: 'clamp(28px,3vw,48px) clamp(20px,2.5vw,36px)' }}>
@@ -41,6 +57,16 @@ function ArtikelUitgebreid({ post, onClose }) {
             {post.titolo}
           </h2>
         </div>
+        <div style={{ display: 'flex', gap: '8px', flexShrink: 0 }}>
+        <button onClick={condividi} style={{
+          background: 'none', border: '1px solid #1A1A1A', cursor: 'pointer',
+          color: '#AAAAAA', fontFamily: "'Inter', sans-serif", fontWeight: 700,
+          fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase',
+          padding: '8px 14px', borderRadius: 0, transition: 'all 0.2s',
+        }}
+        onMouseEnter={e => { e.currentTarget.style.borderColor = '#A0782A'; e.currentTarget.style.color = '#A0782A' }}
+        onMouseLeave={e => { e.currentTarget.style.borderColor = '#1A1A1A'; e.currentTarget.style.color = '#555' }}
+        >{condiviso ? 'Link gekopieerd ✓' : 'Deel ↗'}</button>
         <button onClick={onClose} style={{
           background: 'none', border: '1px solid #1A1A1A', cursor: 'pointer',
           fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '10px',
@@ -50,6 +76,7 @@ function ArtikelUitgebreid({ post, onClose }) {
         onMouseEnter={e => { e.currentTarget.style.borderColor = '#A0782A'; e.currentTarget.style.color = '#A0782A' }}
         onMouseLeave={e => { e.currentTarget.style.borderColor = '#1A1A1A'; e.currentTarget.style.color = '#555' }}
         >Sluiten X</button>
+        </div>
       </div>
       <div style={{ width: '40px', height: '1px', background: '#1A1A1A', marginBottom: '2rem' }} />
       <div style={{ maxWidth: '720px' }}>
