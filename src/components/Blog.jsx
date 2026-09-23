@@ -2,6 +2,29 @@
 import { useState, useRef } from 'react'
 import { posts } from '../data/posts.jsx'
 
+function slugify(id) {
+  return String(id).normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+}
+const INTERNAL_LINK_RE = /\[\[([^\]|]+)\|([^\]]+)\]\]/g
+function renderTestoConLink(testo) {
+  const parts = []
+  let last = 0, m, key = 0
+  INTERNAL_LINK_RE.lastIndex = 0
+  while ((m = INTERNAL_LINK_RE.exec(testo)) !== null) {
+    if (m.index > last) parts.push(testo.slice(last, m.index))
+    parts.push(
+      <a key={key++} href={`/post/${slugify(m[2])}.html`} target="_blank" rel="noopener noreferrer"
+        style={{ color: '#A0782A', textDecoration: 'underline', textDecorationColor: 'rgba(160,120,42,0.4)', textUnderlineOffset: '2px' }}>
+        {m[1]}
+      </a>
+    )
+    last = INTERNAL_LINK_RE.lastIndex
+  }
+  if (last < testo.length) parts.push(testo.slice(last))
+  return parts
+}
+
 function ArtikelUitgebreid({ post, onClose }) {
   return (
     <div style={{ background: '#0a0a0a', borderTop: '2px solid #A0782A',
@@ -34,7 +57,7 @@ function ArtikelUitgebreid({ post, onClose }) {
           if (blocco.tipo === 'paragrafo') return (
             <p key={i} style={{ fontFamily: "'Inter', sans-serif",
               fontSize: 'clamp(14px,1vw,16px)', color: '#AAAAAA',
-              lineHeight: 1.8, marginBottom: '1.5rem' }}>{blocco.testo}</p>
+              lineHeight: 1.8, marginBottom: '1.5rem' }}>{renderTestoConLink(blocco.testo)}</p>
           )
           if (blocco.tipo === 'titoletto') return (
             <h3 key={i} style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700,
