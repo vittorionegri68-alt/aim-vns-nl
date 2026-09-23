@@ -109,6 +109,25 @@ function ArtikelUitgebreid({ post, onClose }) {
         })}
       </div>
 
+      {(() => {
+        const altri = posts.filter(p => p.attivo && p.id !== post.id)
+          .sort((a, b) => new Date(b.data) - new Date(a.data)).slice(0, 2)
+        if (altri.length === 0) return null
+        return (
+          <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #1A1A1A' }}>
+            <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '9px', color: '#AAAAAA', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1rem' }}>Lees ook</div>
+            {altri.map((p, k) => (
+              <a key={k} href={`/post/${slugify(p.id)}.html`}
+                style={{ display: 'block', fontFamily: "'Oswald', sans-serif", fontWeight: 700, fontSize: 'clamp(15px,1.4vw,20px)', color: '#ffffff', textTransform: 'uppercase', letterSpacing: '0.02em', textDecoration: 'none', padding: '0.85rem 0', borderBottom: '1px solid #1A1A1A', transition: 'color 0.2s' }}
+                onMouseEnter={e => { e.currentTarget.style.color = '#A0782A' }}
+                onMouseLeave={e => { e.currentTarget.style.color = '#ffffff' }}>
+                {p.titolo}
+              </a>
+            ))}
+          </div>
+        )
+      })()}
+
       <div style={{ marginTop: '3rem', paddingTop: '2rem',
         borderTop: '1px solid #1A1A1A', display: 'flex', justifyContent: 'center' }}>
         <button onClick={onClose} style={{
