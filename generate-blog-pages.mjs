@@ -87,22 +87,23 @@ function isBlogHomeLink(b) {
 const FALLBACK_TUTTI_GLI_ARTICOLI = { tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Tutti gli articoli" };
 
 function buildContenuto(post) {
-  const filtered = post.contenuto.filter((b) => !isSocialBlock(b) && !isBlogHomeLink(b));
+  return post.contenuto.filter((b) => !isSocialBlock(b) && !isBlogHomeLink(b));
+}
 
-  const idx = filtered.findIndex((b) => b.tipo === "titoletto" && b.testo.trim().toLowerCase() === "leggi anche");
-  if (idx === -1) {
-    // Nessuna sezione "Leggi anche": non se ne inventa una qui, si segue lo
-    // stesso fallback in coda al contenuto.
-    filtered.push(FALLBACK_TUTTI_GLI_ARTICOLI);
-    return filtered;
-  }
-  let cursor = idx + 1;
-  if (filtered[cursor] && filtered[cursor].tipo === "paragrafo") cursor++;
-  const haLinkCorrelati = filtered[cursor] && filtered[cursor].tipo === "link";
-  if (!haLinkCorrelati) {
-    filtered.splice(cursor, 0, FALLBACK_TUTTI_GLI_ARTICOLI);
-  }
-  return filtered;
+function renderLeggiAnche(post, idToPost) {
+  const altri = [...idToPost.values()]
+    .filter((p) => p.id !== post.id)
+    .sort((a, b) => new Date(b.data) - new Date(a.data))
+    .slice(0, 2);
+  if (altri.length === 0) return "";
+  const items = altri
+    .map((p) => `<a class="la-item" href="/post/${slugify(p.id)}.html">${escapeHtml(p.titolo)}</a>`)
+    .join("\n        ");
+  return `
+      <section class="leggi-anche">
+        <h2>Lees ook</h2>
+        ${items}
+      </section>`;
 }
 
 function escapeHtml(str) {
@@ -280,6 +281,10 @@ function renderPage(post, idToSlug, idToPost) {
       .ig-cta-icons a:hover{background:rgba(160,120,42,0.1);}
       footer{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;}
       footer a{color:var(--gold);text-decoration:none;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
+    .leggi-anche { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .leggi-anche h2 { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--textMid); margin-bottom: 0.8rem; font-weight: 700; }
+    .la-item { display: block; padding: 0.7rem 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; font-weight: 600; }
+    .la-item:hover { color: var(--gold); }
     </style>
   </head>
   <body>
@@ -293,6 +298,7 @@ function renderPage(post, idToSlug, idToPost) {
       <h1>${escapeHtml(post.titolo)}</h1>
       <p class="sommario">${escapeHtml(post.sommario)}</p>
 ${bodyBlocks}
+      ${renderLeggiAnche(post, idToPost)}
       <div class="ig-cta">
         <p>Wil je weten hoe AI-assistenten je vinden? De eerste analyse is gratis.</p>
         <a class="btn-link" href="${CALENDLY_URL}" target="_blank" rel="noopener noreferrer">Gratis analyse</a>
