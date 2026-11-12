@@ -14,7 +14,7 @@ const pakketten = [
       'Tweede controle na 30 dagen om verbeteringen te meten',
       'Aanbevelingen voor Google Bedrijfsprofiel',
     ],
-    prezzo: 'Vanaf 180 EUR',
+    prezzo: 'Vanaf 290 EUR',
     prezzoSub: 'Eenmalige betaling · Geen abonnement',
     cta: 'Vraag je audit aan',
     highlight: false,
@@ -35,8 +35,8 @@ const pakketten = [
       'Corrigerende acties inbegrepen',
       'Doorlopende ondersteuning per e-mail',
     ],
-    prezzo: 'Vanaf 480 EUR',
-    prezzoSub: '+ jaarabonnement vanaf 500 EUR',
+    prezzo: 'Vanaf 800 EUR',
+    prezzoSub: '+ jaarabonnement vanaf 700 EUR',
     cta: 'Bespreek je project',
     highlight: true,
   },
@@ -51,8 +51,8 @@ const pakketten = [
       'Geautomatiseerde Instagram-publicatie',
       'Maandelijkse rapporten in plaats van per kwartaal',
     ],
-    prezzo: 'Vanaf 580 EUR',
-    prezzoSub: '+ jaarabonnement vanaf 780 EUR',
+    prezzo: 'Vanaf 1.200 EUR',
+    prezzoSub: '+ jaarabonnement vanaf 1.100 EUR',
     cta: 'Bespreek je project',
     highlight: false,
   },
@@ -147,7 +147,7 @@ export default function Diensten() {
         </div>
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#AAAAAA',
           letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem', textAlign: 'center' }}>
-          Alle prijzen zijn exclusief BTW · Extra taal 100 EUR · Minimale looptijd 12 maanden voor Growth en Pro
+          Alle prijzen zijn exclusief BTW · Extra taal 150 EUR · Minimale looptijd 12 maanden voor Growth en Pro
         </p>
       </div>
       <style>{`
