@@ -11,19 +11,6 @@ const sitiLive = [
     domain: 'casa-cavour.com',
   },
   {
-    label: 'Fietsenmaker. 2 talen',
-    title: 'S40 Fietsservice',
-    desc: 'Sportfietswerkplaats in Nijkerk. Beschikbaar in het Nederlands en Engels, met klantvragen en gestructureerde data zodat AI-zoekmachines de site kunnen lezen.',
-    extra: {
-      score: '34/40',
-      title: 'Technische audit op de dag van publicatie',
-      lines: ['Klassiek zoeken 8/10', 'AI-zoekmachines 9/10', 'Directe antwoorden 8/10', 'AI-gereedheid 9/10'],
-      note: 'Een startpunt, geen eindpunt. Het meet hoe leesbaar de site is voor zoek- en AI-engines, niet de werkelijke zichtbaarheid, die groeit in de tijd.',
-    },
-    url: 'https://s40.nl',
-    domain: 's40.nl · en.s40.nl',
-  },
-  {
     label: 'Vakantieappartement. 2 talen',
     title: 'Garibaldina 75',
     desc: 'Appartement in Romagna. Beschikbaar in het Italiaans en Engels, gebouwd voor AI-zoekmachines. Rechtstreeks gekoppeld aan het Airbnb-portaal voor veilig boeken.',
@@ -36,6 +23,14 @@ const sitiLive = [
     desc: 'Luxe loft in Romagna. Verfijnd design, premium positionering, twee talen. Rechtstreeks gekoppeld aan het Airbnb-portaal voor veilig boeken.',
     url: 'https://samilla.romagna-affitti-brevi.it',
     domain: 'samilla.romagna-affitti-brevi.it',
+  },
+  {
+    label: 'Fietsenmaker. 2 talen',
+    title: 'S40 Fietsservice',
+    desc: 'Sportfietswerkplaats in Nijkerk: racefietsen, gravel en bikefit. Beschikbaar in het Nederlands en Engels, met klantvragen en gestructureerde data zodat AI-zoekmachines de site kunnen lezen.',
+    audit: 'Auditscore: SEO 8/10 · GEO 9/10 · AEO 8/10',
+    url: 'https://s40.nl',
+    domain: 's40.nl',
   },
 ]
 
@@ -142,7 +137,7 @@ export default function SitiWeb() {
         </div>
 
         <div className="sitiweb-grid" style={{
-          display: 'grid', gridTemplateColumns: 'repeat(4,1fr)',
+          display: 'grid', gridTemplateColumns: 'repeat(3,1fr)',
           gap: '2px', marginBottom: 'clamp(32px,4vw,48px)',
         }}>
           {sitiLive.map((s, i) => (
@@ -171,30 +166,11 @@ export default function SitiWeb() {
                 fontFamily: "'Inter', sans-serif", fontSize: '13px',
                 color: '#AAAAAA', lineHeight: 1.65, marginBottom: '16px',
               }}>{s.desc}</p>
-
-              {s.extra && (
-                <div style={{
-                  borderTop: '1px solid #1c1c1c', borderLeft: '2px solid #A0782A',
-                  background: '#0a0a0a', padding: '12px 14px', margin: '0 0 16px 0',
-                }}>
-                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '6px' }}>
-                    <span style={{
-                      fontFamily: "'Oswald', sans-serif", fontWeight: 700,
-                      fontSize: '26px', color: '#A0782A', letterSpacing: '0.02em',
-                    }}>{s.extra.score}</span>
-                    <span style={{
-                      fontFamily: "'Inter', sans-serif", fontWeight: 700,
-                      fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase',
-                      color: '#ffffff',
-                    }}>{s.extra.title}</span>
-                  </div>
-                  <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA', lineHeight: 1.6, marginBottom: '8px' }}>
-                    {s.extra.lines.join(' · ')}
-                  </div>
-                  <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#888888', lineHeight: 1.6 }}>
-                    {s.extra.note}
-                  </div>
-                </div>
+              {s.audit && (
+                <p style={{
+                  fontFamily: "'Inter', sans-serif", fontSize: '13px',
+                  color: '#AAAAAA', lineHeight: 1.65, marginBottom: '16px',
+                }}>{s.audit}</p>
               )}
               <div style={{
                 fontFamily: "'Inter', sans-serif", fontWeight: 700,
@@ -225,9 +201,8 @@ export default function SitiWeb() {
 
       </div>
       <style>{`
-        .sitiweb-grid { grid-template-columns: repeat(4,1fr); }
-        @media (max-width: 1100px) { .sitiweb-grid { grid-template-columns: repeat(2,1fr) !important; } }
-        @media (max-width: 700px) { .sitiweb-grid { grid-template-columns: 1fr !important; } }
+        .sitiweb-grid { grid-template-columns: repeat(3,1fr); }
+        @media (max-width: 900px) { .sitiweb-grid { grid-template-columns: 1fr !important; } }
         @media (max-width: 600px) { .sitiweb-main a { width: 100%; text-align: center; } }
       `}</style>
     </section>
