@@ -23,7 +23,7 @@ Node: latest LTS | Package manager: npm
 - MAI blocco redirects in vercel.json su sottodomini — causa ERR_TOO_MANY_REDIRECTS
 - vercel.json: SOLO blocco headers su sottodomini, redirects SOLO su dominio radice
 - noscript: SEMPRE nel body dopo div#root, MAI nel head (Vite/parse5 rifiuta)
-- GA4 cookieless: anonymize_ip true, client_storage none
+- GA4 senza cookie: Consent Mode v2 con analytics_storage 'denied', dichiarato PRIMA del tag che carica gtag.js. MAI client_storage ne' anonymize_ip: GA4 li ignora e il sito scrive i cookie _ga e _ga_<ID> (misurato il 23/11/2026)
 - MAI em dash in qualsiasi testo prodotto
 - Schema Person: chiedere sempre nome e URL del gestore prima di scrivere
 - File mancante: fermarsi e chiedere, non ricostruire da zero
@@ -67,7 +67,9 @@ NON modificare schema senza leggere il documento di contesto aggiornato.
 
 ## GA4
 ID: G-Y73KX5Z2DJ
-Configurazione: anonymize_ip: true, client_storage: 'none'
+Configurazione: Consent Mode v2 con analytics_storage 'denied' prima del caricamento di gtag.js, piu'
+allow_google_signals e allow_ad_personalization_signals a false. Verificato in browser: nessun cookie.
+Il blocco GA4 e' in quattro file (index-NL, index, resources): aggiornarli tutti.
 
 ## Calendly
 CTA principale: https://calendly.com/aim-vns-info/30min

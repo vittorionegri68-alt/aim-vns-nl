@@ -25,18 +25,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <!-- GA4 cookieless -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y73KX5Z2DJ"></script>
+  <!-- GA4 senza cookie: Consent Mode v2 con analytics_storage negato.
+       Il blocco consent deve restare PRIMA del caricamento di gtag.js:
+       se viene dopo, gtag.js parte con lo stato predefinito e scrive
+       i cookie _ga e _ga_Y73KX5Z2DJ. client_storage e anonymize_ip erano
+       parametri di Universal Analytics, GA4 li ignora: non reintrodurli. -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Y73KX5Z2DJ', {
-      anonymize_ip: true,
-      client_storage: 'none',
-      allow_google_signals: false,
-      allow_ad_personalization_signals: false,
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
     });
+    gtag('js', new Date());
+    gtag('config', 'G-Y73KX5Z2DJ', { allow_google_signals: false, allow_ad_personalization_signals: false });
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y73KX5Z2DJ"></script>
+
 
   <!-- Schema.org -->
   <script type="application/ld+json">
