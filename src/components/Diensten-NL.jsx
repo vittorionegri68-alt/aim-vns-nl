@@ -1,5 +1,5 @@
-﻿// Diensten-NL.jsx — AI'm by VNS NL
-// v2.0 — tekst herschreven voor niet-technisch publiek — juni 2026
+﻿// Diensten-NL.jsx, AI'm by VNS NL
+// v3.0, nieuwe pakketopbouw (Starter, Complete website, Growth), november 2026
 import { useEffect, useRef } from 'react'
 
 const pakketten = [
@@ -8,7 +8,7 @@ const pakketten = [
     tag: 'Eerste stap',
     desc: "Je hebt een website maar weet niet of ChatGPT jou kan vinden? We controleren hoe het er nu voor staat, vertellen je wat niet werkt en leveren alles wat nodig is om het te verbeteren. Eenmalige betaling, geen abonnement.",
     incluso: [
-      'Gratis eerste analyse — geen verplichtingen',
+      'Gratis eerste analyse, geen verplichtingen',
       'Volledige controle van hoe AI-zoekmachines jou zien',
       'Geoptimaliseerde technische bestanden klaar voor je website',
       'Tweede controle na 30 dagen om verbeteringen te meten',
@@ -20,41 +20,42 @@ const pakketten = [
     highlight: false,
   },
   {
-    nome: 'Growth',
-    tag: 'Hoofddienst',
-    desc: "We bouwen je website vanaf nul, ontworpen om vanaf dag een gevonden te worden door ChatGPT. Daarna houden we hem actueel met nieuwe content en laten we je zien hoe de resultaten groeien, met echte cijfers. Heb je al een website? Laten we praten: we beoordelen elke situatie samen.",
+    nome: 'Complete website',
+    tag: 'Om te starten',
+    desc: "We bouwen je website vanaf nul, ontworpen om vanaf dag één gevonden te worden door ChatGPT, met de Q&A-pagina met de vragen van je klanten en het eerste blogartikel. Bij oplevering is de website van jou, op je eigen account. Eenmalige betaling, geen abonnement.",
     incluso: [
       'Analyse van je huidige situatie voor we beginnen',
       'Nieuwe website gebouwd voor AI-zoekmachines',
-      'Google Bedrijfsprofiel — installatie inbegrepen',
+      'Q&A-pagina met de 10 echte vragen van je klanten',
+      'Eerste blogartikel',
+      'Google Bedrijfsprofiel: installatie inbegrepen',
+      'Indexering in zoekmachines',
       'Technische verificatie voor publicatie',
-      'Content gebouwd rond de echte vragen van je klanten',
-      'Blogartikel elke twee weken, automatisch',
+      'Preview binnen 3 dagen na ontvangst van al het materiaal',
+      'Controle na 30 dagen om verbeteringen te meten',
+    ],
+    prezzo: 'Vanaf 800 EUR',
+    prezzoSub: 'Eenmalige betaling · Geen abonnement',
+    cta: 'Bespreek je project',
+    highlight: false,
+  },
+  {
+    nome: 'Growth',
+    tag: 'Hoofddienst',
+    desc: "Alles uit Complete website, plus doorlopend beheer: elke twee weken een nieuw blogartikel, een dashboard met je zichtbaarheidsdata altijd actueel en rapporten die laten zien hoe de resultaten groeien, met echte cijfers. De relatie met je klanten blijft bij jou.",
+    incluso: [
+      'Alles uit Complete website',
+      'Blogartikel elke twee weken, door ons beheerd',
+      'Persoonlijk dashboard: je zichtbaarheidsdata altijd live',
       'Maandelijkse rapporten de eerste 3 maanden, daarna per kwartaal',
       'Gesprek met Vittorio om de data samen te bespreken',
       'Corrigerende acties inbegrepen',
       'Doorlopende ondersteuning per e-mail',
     ],
     prezzo: 'Vanaf 800 EUR',
-    prezzoSub: '+ jaarabonnement vanaf 700 EUR',
+    prezzoSub: '+ jaarabonnement vanaf 900 EUR',
     cta: 'Bespreek je project',
     highlight: true,
-  },
-  {
-    nome: 'Pro',
-    tag: 'Maximale zichtbaarheid',
-    desc: "Alles uit Growth, plus een Q&A-pagina op je website, een persoonlijk dashboard met je zichtbaarheidsdata altijd actueel, en geautomatiseerde publicatie op Instagram. De relatie met je klanten blijft bij jou.",
-    incluso: [
-      'Alles uit Growth',
-      'Q&A-pagina met de 10 echte vragen van je klanten',
-      'Persoonlijk dashboard — je zichtbaarheidsdata altijd live',
-      'Geautomatiseerde Instagram-publicatie',
-      'Maandelijkse rapporten in plaats van per kwartaal',
-    ],
-    prezzo: 'Vanaf 1.200 EUR',
-    prezzoSub: '+ jaarabonnement vanaf 1.100 EUR',
-    cta: 'Bespreek je project',
-    highlight: false,
   },
 ]
 
@@ -112,7 +113,7 @@ export default function Diensten() {
                   <li key={j} style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px',
                     color: '#AAAAAA', padding: '6px 0', borderBottom: '1px solid #141414',
                     display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ color: '#A0782A', fontSize: '10px' }}>—</span>{item}
+                    <span style={{ color: '#A0782A', fontSize: '10px' }}>-</span>{item}
                   </li>
                 ))}
               </ul>
@@ -147,7 +148,15 @@ export default function Diensten() {
         </div>
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#AAAAAA',
           letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem', textAlign: 'center' }}>
-          Alle prijzen zijn exclusief BTW · Extra taal 150 EUR · Minimale looptijd 12 maanden voor Growth en Pro
+          Alle prijzen zijn exclusief BTW · Extra taal 150 EUR · Jaarabonnement: verlengen of opzeggen vóór de einddatum
+        </p>
+        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA',
+          lineHeight: 1.7, margin: '1rem auto 0', maxWidth: '720px', textAlign: 'center' }}>
+          Growth afgesloten samen met de bouw van de website: 10% korting op het totaal van het eerste jaar.
+        </p>
+        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA',
+          lineHeight: 1.7, margin: '1rem auto 0', maxWidth: '720px', textAlign: 'center' }}>
+          Wil je de website zelf beheren met Claude? Wij richten alles in op je computer, prijs op aanvraag. Eventuele kosten van Claude beoordelen we per geval: in de meeste gevallen is het gratis account nu voldoende.
         </p>
       </div>
       <style>{`
