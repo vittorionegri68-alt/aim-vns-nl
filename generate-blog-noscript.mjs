@@ -13,6 +13,20 @@ const INDEX_FILE = "./index.html";
 const LOCALE = "nl-NL";
 // ------------------------------------
 
+// slugify identica a quella di generate-blog-pages.mjs: i link del noscript
+// devono puntare esattamente ai file generati in public/post/.
+function slugify(id) {
+  return String(id)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+const READ_LABEL = "Lees het volledige artikel";
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -51,6 +65,7 @@ function renderPost(post, locale) {
           <time datetime="${escapeHtml(post.data)}">${dateFormatted}</time>
           <p>${escapeHtml(post.sommario)}</p>
           ${body}
+          <p><a href="/post/${slugify(post.id)}.html">${escapeHtml(READ_LABEL)}</a></p>
         </article>`;
 }
 
