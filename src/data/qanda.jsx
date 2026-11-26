@@ -11,7 +11,7 @@ export const qanda = [
   },
   {
     q: "Wat kost de dienst?",
-    a: "We hebben drie pakketten: Starter voor wie al een website heeft en de situatie wil begrijpen en de basis wil verbeteren, Complete website voor wie een nieuwe website wil die vanaf dag één gevonden wordt, Growth voor wie ook doorlopend beheer wil met blogartikelen, dashboard en rapporten. Neem contact op voor een offerte op maat.",
+    a: "We hebben drie pakketten: Start voor wie al een website heeft en de situatie wil begrijpen en de basis wil verbeteren, Complete website voor wie een nieuwe website wil die vanaf dag één gevonden wordt, Groei als upgrade op Complete website voor wie ook doorlopend beheer wil met blogartikelen, dashboard en rapporten. Kies je Groei samen met Complete website, dan krijg je 10% korting op het totaal van het eerste jaar. Neem contact op voor een offerte op maat.",
   },
   {
     q: "Hoe lang duurt het voordat ik resultaten zie?",

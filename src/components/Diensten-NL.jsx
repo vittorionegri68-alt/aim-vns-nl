@@ -1,10 +1,10 @@
 ﻿// Diensten-NL.jsx, AI'm by VNS NL
-// v3.0, nieuwe pakketopbouw (Starter, Complete website, Growth), november 2026
+// v3.1, nieuwe pakketopbouw (Start, Complete website, Groei als upgrade), november 2026
 import { useEffect, useRef } from 'react'
 
 const pakketten = [
   {
-    nome: 'Starter',
+    nome: 'Start',
     tag: 'Eerste stap',
     desc: "Je hebt een website maar weet niet of ChatGPT jou kan vinden? We controleren hoe het er nu voor staat, vertellen je wat niet werkt en leveren alles wat nodig is om het te verbeteren. Eenmalige betaling, geen abonnement.",
     incluso: [
@@ -40,11 +40,10 @@ const pakketten = [
     highlight: false,
   },
   {
-    nome: 'Growth',
-    tag: 'Hoofddienst',
-    desc: "Alles uit Complete website, plus doorlopend beheer: elke twee weken een nieuw blogartikel, een dashboard met je zichtbaarheidsdata altijd actueel en rapporten die laten zien hoe de resultaten groeien, met echte cijfers. De relatie met je klanten blijft bij jou.",
+    nome: 'Groei',
+    tag: 'Upgrade op Complete website',
+    desc: "Geef je nieuwe website de boost die hij verdient. Complete website zorgt dat AI-zoekmachines je vinden; Groei houdt hem in beweging: elke twee weken een nieuw blogartikel, een dashboard met je zichtbaarheidsdata altijd actueel en rapporten met echte cijfers. De relatie met je klanten blijft bij jou.",
     incluso: [
-      'Alles uit Complete website',
       'Blogartikel elke twee weken, door ons beheerd',
       'Persoonlijk dashboard: je zichtbaarheidsdata altijd live',
       'Maandelijkse rapporten de eerste 3 maanden, daarna per kwartaal',
@@ -52,8 +51,9 @@ const pakketten = [
       'Corrigerende acties inbegrepen',
       'Doorlopende ondersteuning per e-mail',
     ],
-    prezzo: 'Vanaf 800 EUR',
-    prezzoSub: '+ jaarabonnement vanaf 900 EUR',
+    prezzo: 'Vanaf 900 EUR',
+    prezzoSub: 'Jaarabonnement · Komt bovenop Complete website',
+    nota: 'Samen met Complete website: 10% korting op het totaal van het eerste jaar.',
     cta: 'Bespreek je project',
     highlight: true,
   },
@@ -123,6 +123,8 @@ export default function Diensten() {
                   letterSpacing: '0.02em', lineHeight: 1 }}>{p.prezzo}</div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px',
                   color: '#AAAAAA', marginTop: '4px', letterSpacing: '0.05em' }}>{p.prezzoSub}</div>
+                {p.nota && <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px',
+                  color: '#A0782A', marginTop: '10px', lineHeight: 1.5 }}>{p.nota}</div>}
               </div>
               <a href="https://calendly.com/aim-vns-info/30min" target="_blank" rel="noopener" style={{
                 fontFamily: "'Inter', sans-serif", fontWeight: 700,
@@ -149,10 +151,6 @@ export default function Diensten() {
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: '#AAAAAA',
           letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '1.5rem', textAlign: 'center' }}>
           Alle prijzen zijn exclusief BTW · Extra taal 150 EUR · Jaarabonnement: verlengen of opzeggen vóór de einddatum
-        </p>
-        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA',
-          lineHeight: 1.7, margin: '1rem auto 0', maxWidth: '720px', textAlign: 'center' }}>
-          Growth afgesloten samen met de bouw van de website: 10% korting op het totaal van het eerste jaar.
         </p>
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#AAAAAA',
           lineHeight: 1.7, margin: '1rem auto 0', maxWidth: '720px', textAlign: 'center' }}>
