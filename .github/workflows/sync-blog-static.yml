@@ -26,14 +26,25 @@ jobs:
       - name: Rigenera blocco statico blog
         run: node generate-blog-noscript.mjs
 
-      - name: Commit e push se index.html e' cambiato
+      # index.html e' una copia del file sorgente index-XX.html. Lo script
+      # rigenera solo index.html, quindi senza questo passo i due divergono
+      # e la copia successiva fatta a mano riporta indietro il blocco blog.
+      - name: Riallinea il file sorgente index-XX.html
         run: |
-          if git diff --quiet -- index.html; then
-            echo "index.html gia' aggiornato, nessun commit necessario."
+          for f in index-*.html; do
+            [ -e "$f" ] || continue
+            cp index.html "$f"
+            echo "riallineato $f"
+          done
+
+      - name: Commit e push se qualcosa e' cambiato
+        run: |
+          if git diff --quiet -- index.html index-*.html; then
+            echo "gia' aggiornati, nessun commit necessario."
           else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add index.html
-            git commit -m "Rigenera blog statico [automatico]"
+            git add index.html index-*.html
+            git commit -m "Rigenera blog statico e riallinea il sorgente [automatico]"
             git push
           fi
