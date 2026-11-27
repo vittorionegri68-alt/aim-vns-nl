@@ -189,6 +189,10 @@ function renderContentBlock(b, idToSlug) {
   if (b.tipo === "titoletto") {
     return `      <h2>${escapeHtml(b.testo)}</h2>`;
   }
+  if (b.tipo === "immagine") {
+    const cap = b.etichetta ? `<figcaption>${escapeHtml(b.etichetta)}</figcaption>` : "";
+    return `      <figure class="post-img"><img src="${escapeAttr(b.testo)}" alt="${escapeAttr(b.etichetta || "")}" loading="lazy" />${cap}</figure>`;
+  }
   if (b.tipo === "link") {
     const isInstagram = b.testo.includes("instagram");
     const isFacebook = b.testo.includes("facebook");
@@ -286,6 +290,9 @@ function renderPage(post, idToSlug, idToPost) {
       .leggi-anche h2{font-family:'Inter',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--textMid);margin:0 0 1rem;font-weight:700;}
       .la-item{display:block;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1rem,1.6vw,1.25rem);text-transform:uppercase;letter-spacing:0.02em;padding:0.85rem 0;border-bottom:1px solid var(--border);color:var(--text);text-decoration:none;transition:color 0.2s;}
       .la-item:hover{color:var(--gold);}
+      .post-img{margin:2rem 0;}
+      .post-img img{width:100%;height:auto;border:1px solid var(--border);border-radius:4px;display:block;}
+      .post-img figcaption{font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--textSoft);margin-top:0.6rem;text-align:center;}
     </style>
   </head>
   <body>

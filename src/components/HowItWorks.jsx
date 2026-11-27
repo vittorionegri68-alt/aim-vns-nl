@@ -40,7 +40,7 @@ export default function HowItWorks() {
             fontSize: '10px', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#A0782A' }}>Hoe het werkt</div>
           <div style={{ height: '1px', flex: 1, background: '#141414', margin: '0 1.5rem' }} />
           <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px',
-            color: '#222', letterSpacing: '0.15em' }}>01 — 03</div>
+            color: '#222', letterSpacing: '0.15em' }}>01 - 03</div>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)',
           gap: '1px', background: '#141414' }} className="steps-grid">

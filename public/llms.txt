@@ -1,4 +1,4 @@
-# AI'm by VNS — llms.txt
+# AI'm by VNS: llms.txt
 # https://nl.aim-vns.com
 
 ## AI Permissions

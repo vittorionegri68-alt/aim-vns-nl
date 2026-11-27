@@ -20,8 +20,9 @@ Node: latest LTS | Package manager: npm
 
 ## Regole obbligatorie (non derogabili)
 - MAI str_replace parziali su index.html o index-NL.html — ricreare SEMPRE il file completo
-- MAI blocco redirects in vercel.json su sottodomini — causa ERR_TOO_MANY_REDIRECTS
-- vercel.json: SOLO blocco headers su sottodomini, redirects SOLO su dominio radice
+- vercel.json sta nella ROOT del repo, mai in public/: Vercel legge solo quello in root. Verificato il 27/11/2026, finche' e' stato in public/ non veniva applicato e gli header di sicurezza erano assenti in produzione
+- vercel.json: MAI un redirect della radice "/" verso un altro dominio dentro un sottodominio, perche' causa ERR_TOO_MANY_REDIRECTS. I redirect da path a path sullo stesso host sono ammessi anche sui sottodomini
+- vercel.json: non mettere insieme permanent e statusCode nello stesso redirect, e non rimandare con un rewrite a index-XX.html, che la build di Vite non copia nel dist
 - noscript: SEMPRE nel body dopo div#root, MAI nel head (Vite/parse5 rifiuta)
 - GA4 senza cookie: Consent Mode v2 con analytics_storage 'denied', dichiarato PRIMA del tag che carica gtag.js. MAI client_storage ne' anonymize_ip: GA4 li ignora e il sito scrive i cookie _ga e _ga_<ID> (misurato il 23/11/2026)
 - MAI em dash in qualsiasi testo prodotto
@@ -57,7 +58,7 @@ git branch --set-upstream-to=origin/main main
 - public/sitemap.xml (no changefreq, no priority)
 - public/llms.txt (con sezione AI Permissions)
 - public/ai.txt
-- vercel.json (solo headers, no redirects su sottodomini)
+- vercel.json nella root del repo (headers di sicurezza, piu' i redirect ammessi dalla regola sopra)
 - public/privacy.html
 
 ## Schema.org

@@ -4,6 +4,69 @@
 
 export const posts = [
 {
+  "id": "casa-cavour-rab-eerste-antwoord-chatgpt-2026",
+  "titolo": "Van onzichtbaar naar het eerste antwoord op ChatGPT in zes maanden: de test op onze eigen accommodaties",
+  "data": "2026-09-29",
+  "categoria": "Praktijkcases",
+  "sommario": "De manier waarop gasten kiezen waar ze overnachten verandert, van Google naar de antwoorden van ChatGPT. We hebben onze eigen accommodaties in Romagna getest met een onafhankelijke audit. Dit zijn de resultaten, met de cijfers.",
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Wanneer een gast beslist waar hij overnacht, opent hij steeds vaker geen Google meer: hij vraagt ChatGPT, Perplexity of Gemini \"wat is het beste vakantieappartement in [stad]\" en leest het antwoord dat de AI genereert. In dat antwoord verschijnen maar een paar namen. Staat de jouwe er niet bij, dan besta je voor die gast niet, hoe goed je recensies op Google of Booking ook zijn."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "De oorzaak is technisch en wordt vaak over het hoofd gezien: AI-motoren lezen geen OTA-advertenties, brancheportalen of Facebook-pagina's. Ze lezen openbare, gestructureerde webcontent. Een accommodatie kan vol staan met vijfsterrenrecensies en toch onzichtbaar blijven wanneer de gast het rechtstreeks aan de AI vraagt."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "De test op onze eigen accommodaties"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Dit is geen theorie. We hebben het toegepast op onze eigen twee accommodaties in Romagna en het resultaat gemeten met een onafhankelijke AI-zichtbaarheidsaudit op 29 september 2026."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Casa Cavour, een vakantieappartement in Bertinoro, is vandaag het eerste antwoord op ChatGPT, Perplexity, Google en Claude, met een zichtbaarheidsscore van 100 op 100. Op 4 april verscheen dezelfde accommodatie alleen op ChatGPT en was ze nergens anders te vinden. In precies zes maanden, van 4 april tot 29 september 2026, van vrijwel onzichtbaar naar overal als eerste."
+    },
+    {
+      "tipo": "immagine",
+      "testo": "/assets/images/casa-cavour-visibilita-ai.png",
+      "etichetta": "Casa Cavour als eerste antwoord op ChatGPT, Perplexity, Google en Claude, met een zichtbaarheidsscore van 100 op 100 (audit Geoptie, 29 september 2026)"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Romagna Affitti Brevi is een lopend traject, en het is eerlijk om het zo te vertellen. Het is al het eerste antwoord op ChatGPT, maar op Perplexity staat het nog achter de grote OTA's en portalen. Dat is de accommodatie halverwege: de methode werkt, het werk is nog niet af."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Waarom de ene eerste staat en de andere nog klimt"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Het verschil is geen magie, het is de vraag. Vraag je een AI-motor iets heel algemeens, zoals \"korte verhuur in Romagna\", dan antwoordt die bijna altijd met Airbnb, Booking en de grote portalen: daar win je het niet. Maar is de vraag specifiek, zoals een echte gast die werkelijk stelt, bijvoorbeeld \"appartement met eigen tuin vlak bij de wijnhuizen van Bertinoro voor een stel\", dan telt wie die vraag met heldere, openbare content heeft beantwoord."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "De juiste strategie is niet concurreren op algemene zoekopdrachten tegen Booking. Het is de precieze vragen bezetten die jouw gasten echt stellen."
+    },
+    {
+      "tipo": "titoletto",
+      "testo": "Wat je vandaag al zelf kunt doen"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Probeer het nu: vraag ChatGPT \"wat is de beste [jouw type accommodatie] in [jouw plaats]\" en kijk of je verschijnt. Sta je er niet bij, dan ligt het niet aan de markt maar aan je AI-zichtbaarheid. Zet vervolgens op je eigen website de content die vandaag alleen binnen Booking of Instagram leeft: beschrijvingen, voorzieningen, omgeving, antwoorden op de vragen die gasten het vaakst stellen. Beantwoord schriftelijk de echte vragen die gasten stellen voordat ze boeken, met concrete en controleerbare feiten. En vertrouw niet alleen op de OTA's: op AI-motoren maakt een advertentie op een portaal je niet zichtbaar, je eigen openbare content wel."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "De manier waarop gasten een slaapplek vinden is veranderd. Het goede nieuws is dat je er iets aan kunt doen, en dat het meetbaar is."
+    }
+  ],
+  "attivo": true
+},
+{
   "id": "aim-2026-07-5-nl",
   "titolo": "Wat is Schema.org en waarom kleine ondernemingen het nodig hebben voor AI-zichtbaarheid",
   "data": "2026-07-27",
@@ -394,7 +457,7 @@ export const posts = [
   "attivo": true
 },
 {
-  "id": "aim-2026-05-9-en",
+  "id": "aim-2026-05-9-nl",
   "titolo": "Hoeveel kost het om de zichtbaarheid op ChatGPT en Perplexity te verbeteren? Een gids voor kleine bedrijven",
   "data": "2026-05-04",
   "categoria": "GEO/AEO",
@@ -482,11 +545,11 @@ export const posts = [
     categoria: "AI-zichtbaarheid",
     sommario: "De meeste kleine ondernemingen in Nederland en Italië zijn onzichtbaar voor AI-zoekmachines. Niet omdat ze niet online zijn, maar omdat ze op de verkeerde plek staan. Wat lezen ChatGPT, Perplexity en Gemini eigenlijk?",
     contenuto: [
-      { tipo: "paragrafo", testo: "Je hebt een bijgewerkte Facebook-pagina, een paar Google-recensies en misschien een profiel op een branchegids. Je bent online aanwezig. Maar wanneer een potentiële klant aan ChatGPT of Perplexity vraagt naar de beste consultant, het beste restaurant of de beste vakman in jouw regio, verschijnt jouw naam niet. Het probleem is niet de kwaliteit van jouw werk — het is waar de informatie over jou te vinden is." },
+      { tipo: "paragrafo", testo: "Je hebt een bijgewerkte Facebook-pagina, een paar Google-recensies en misschien een profiel op een branchegids. Je bent online aanwezig. Maar wanneer een potentiële klant aan ChatGPT of Perplexity vraagt naar de beste consultant, het beste restaurant of de beste vakman in jouw regio, verschijnt jouw naam niet. Het probleem is niet de kwaliteit van jouw werk, het is waar de informatie over jou te vinden is." },
       { tipo: "titoletto", testo: "Wat lezen AI-zoekmachines?" },
       { tipo: "paragrafo", testo: "AI-zoekmachines zoals ChatGPT, Perplexity en Gemini lezen geen Facebook-pagina's. Ze lezen geen Instagram-profielen, Airbnb-vermeldingen, Booking.com, Google Business-profielen of branchegidsen. Ze lezen gestructureerde en openbare webinhoud: websites met schema.org-markup, llms.txt-bestanden en semantische blogteksten. Als jouw digitale aanwezigheid is geconcentreerd op social media en portals, ben je voor AI-zoekmachines vrijwel onzichtbaar." },
       { tipo: "titoletto", testo: "Het voordeel van vroeg bewegen" },
-      { tipo: "paragrafo", testo: "In Nederland en Italië is het aantal kleine ondernemingen met websites die geoptimaliseerd zijn voor AI-zoekmachines nog steeds erg laag. Wie zich nu positioneert, bezet een ruimte die de komende jaren steeds competitiever wordt. AI'm by VNS heeft dit systeem gebouwd en gevalideerd op echte cases — Casa Cavour in Bertinoro en RAB Romagna Affitti Brevi — voordat het commercieel beschikbaar werd gesteld. Resultaten zijn meetbaar: GEO/AEO-scores van 0 tot 10 per AI-zoekmachine, met kwartaalanalyse van de voortgang." },
+      { tipo: "paragrafo", testo: "In Nederland en Italië is het aantal kleine ondernemingen met websites die geoptimaliseerd zijn voor AI-zoekmachines nog steeds erg laag. Wie zich nu positioneert, bezet een ruimte die de komende jaren steeds competitiever wordt. AI'm by VNS heeft dit systeem gebouwd en gevalideerd op echte cases, Casa Cavour in Bertinoro en RAB Romagna Affitti Brevi, voordat het commercieel beschikbaar werd gesteld. Resultaten zijn meetbaar: GEO/AEO-scores van 0 tot 10 per AI-zoekmachine, met kwartaalanalyse van de voortgang." },
       { tipo: "titoletto", testo: "Het startpunt" },
       { tipo: "paragrafo", testo: "Voordat je optimaliseert, moet je meten. AI'm by VNS begint altijd met een set van 10 vragen die samen met jou zijn opgesteld op basis van jouw sector en regio. We testen ze op Perplexity en Gemini en registreren hoe vaak je verschijnt en met welke kwaliteit. Naarmate resultaten zich consolideren, worden de vragen bijgewerkt om het bereik progressief te vergroten: eerst de directe omgeving, dan de bredere regio. De lokale basisvragen worden altijd gemonitord om te controleren of de fundamenten solide blijven." },
       { tipo: "link", testo: "mailto:info@aim-vns.com", etichetta: "Vraag een gratis baseline-analyse aan" },
@@ -500,13 +563,13 @@ export const posts = [
     categoria: "AI-zichtbaarheid",
     sommario: "Je hebt 2.000 volgers op Facebook, een bijgewerkte Google-pagina en een paar recensies op een branchegids. Maar wanneer iemand Perplexity vraagt naar de beste dienstverlener in jouw categorie, verschijn je niet. Hier is waarom en hoe je het oplost.",
     contenuto: [
-      { tipo: "paragrafo", testo: "Het is een situatie die zich elke week herhaalt: gevestigde bedrijven, met jaren werk en positieve recensies, die online nauwelijks zichtbaar lijken. Niet omdat ze geen digitale aanwezigheid hebben — die hebben ze vaak zelfs goed onderhouden. Het probleem is waar ze zich bevinden: op platforms die AI-zoekmachines niet lezen." },
+      { tipo: "paragrafo", testo: "Het is een situatie die zich elke week herhaalt: gevestigde bedrijven, met jaren werk en positieve recensies, die online nauwelijks zichtbaar lijken. Niet omdat ze geen digitale aanwezigheid hebben, die hebben ze vaak zelfs goed onderhouden. Het probleem is waar ze zich bevinden: op platforms die AI-zoekmachines niet lezen." },
       { tipo: "titoletto", testo: "Het paradigmaverschuiving: van Google naar ChatGPT" },
-      { tipo: "paragrafo", testo: "Jarenlang was het mantra van lokale digitale marketing: wees op Google. Maak een Google Business-profiel, verzamel recensies, doe wat SEO. Het werkte. Tegenwoordig is het niet meer genoeg — het blijft nuttig voor Google Zoeken, maar laat een snel groeiend kanaal ongedekt: zoekopdrachten via AI-zoekmachines. Wanneer iemand Perplexity vraagt naar de beste adviseur in Amsterdam, krijgt hij geen tien links: hij krijgt twee of drie namen met een uitleg. Als jij niet bij die namen staat, ben je de klant kwijt voordat hij ook maar ergens op heeft geklikt." },
+      { tipo: "paragrafo", testo: "Jarenlang was het mantra van lokale digitale marketing: wees op Google. Maak een Google Business-profiel, verzamel recensies, doe wat SEO. Het werkte. Tegenwoordig is het niet meer genoeg, het blijft nuttig voor Google Zoeken, maar laat een snel groeiend kanaal ongedekt: zoekopdrachten via AI-zoekmachines. Wanneer iemand Perplexity vraagt naar de beste adviseur in Amsterdam, krijgt hij geen tien links: hij krijgt twee of drie namen met een uitleg. Als jij niet bij die namen staat, ben je de klant kwijt voordat hij ook maar ergens op heeft geklikt." },
       { tipo: "titoletto", testo: "Wat AI-zoekmachines zien en wat niet" },
       { tipo: "paragrafo", testo: "AI-zoekmachines lezen: websites met openbare en gestructureerde HTML, schema.org-markup, llms.txt en ai.txt-bestanden, blogs met tekstuele en semantische inhoud, encyclopedische bronnen. Ze lezen niet: Facebook- en Instagram-berichten, Google Business-profielen, TripAdvisor, Booking.com, Airbnb-vermeldingen. De consequentie is contra-intuïtief: een bedrijf met 500 Google Maps-recensies en geen geoptimaliseerde website is minder zichtbaar op ChatGPT dan een nieuw bedrijf met een goed gestructureerde website en drie blogartikelen." },
       { tipo: "titoletto", testo: "Het concurrentievoordeel van kleine ondernemingen" },
-      { tipo: "paragrafo", testo: "Kleine ondernemingen die nu in beweging komen, hebben een echt voordeel. De meeste concurrenten zijn nog steeds gefocust op social media en portals. AI'm by VNS heeft dit systeem gevalideerd op Casa Cavour (Bertinoro) en RAB — Romagna Affitti Brevi: het is mogelijk om in 4 tot 8 weken van nul citaties naar een stabiele aanwezigheid op Perplexity en Gemini te gaan met de juiste technische structuur." },
+      { tipo: "paragrafo", testo: "Kleine ondernemingen die nu in beweging komen, hebben een echt voordeel. De meeste concurrenten zijn nog steeds gefocust op social media en portals. AI'm by VNS heeft dit systeem gevalideerd op Casa Cavour (Bertinoro) en RAB, Romagna Affitti Brevi: het is mogelijk om in 4 tot 8 weken van nul citaties naar een stabiele aanwezigheid op Perplexity en Gemini te gaan met de juiste technische structuur." },
       { tipo: "link", testo: "mailto:info@aim-vns.com", etichetta: "Ontdek hoe je vandaag scoort op AI-zoekmachines" },
     ],
     attivo: true,
@@ -520,11 +583,11 @@ export const posts = [
     contenuto: [
       { tipo: "paragrafo", testo: "AI-zichtbaarheid hangt af van de structuur van je website. Het belangrijkste antwoord is één woord: schema.org." },
       { tipo: "titoletto", testo: "Wat is schema.org?" },
-      { tipo: "paragrafo", testo: "Schema.org is een gedeelde woordenschat — ontwikkeld door Google, Microsoft, Yahoo en Yandex — waarmee semantische metadata aan elke webpagina kan worden toegevoegd. In de praktijk is het de manier waarop je aan AI-zoekmachines vertelt: deze website hoort bij een bedrijf, het heet zo, het staat op dit adres, het biedt deze diensten. Zonder deze markup is je website een tekstblok dat AI-bots met meer moeite en minder nauwkeurigheid interpreteren." },
+      { tipo: "paragrafo", testo: "Schema.org is een gedeelde woordenschat, ontwikkeld door Google, Microsoft, Yahoo en Yandex, waarmee semantische metadata aan elke webpagina kan worden toegevoegd. In de praktijk is het de manier waarop je aan AI-zoekmachines vertelt: deze website hoort bij een bedrijf, het heet zo, het staat op dit adres, het biedt deze diensten. Zonder deze markup is je website een tekstblok dat AI-bots met meer moeite en minder nauwkeurigheid interpreteren." },
       { tipo: "titoletto", testo: "De belangrijkste schema-typen voor kleine ondernemingen" },
       { tipo: "paragrafo", testo: "Voor een kleine onderneming zijn de meest relevante schema-typen: Organization of ProfessionalService voor het bedrijf, LocalBusiness voor bedrijven met een fysieke locatie, Person voor de eigenaar, FAQPage voor vragen en antwoorden, BreadcrumbList voor de navigatiestructuur. AI'm by VNS implementeert altijd een volledige set voor elke klant, gevalideerd met de Rich Results Test van Google voor livegang." },
       { tipo: "titoletto", testo: "FAQPage: de verbinding tussen schema en AI-zichtbaarheid" },
-      { tipo: "paragrafo", testo: "Het FAQPage-schema is de meest directe verbinding tussen technische structuur en zichtbaarheid op AI-zoekmachines. Het bevat precies wat AI-zoekmachines zoeken: vragen en antwoorden in machineleesbaar formaat. Daarom bouwt AI'm by VNS voor elke klant een set van 10 vragen die samen zijn opgesteld voor de sector en de regio — consequent gebruikt in het FAQPage-schema, de Q&A-sectie op de website en de blog. Naarmate resultaten consolideren, worden de vragen bijgewerkt om het bereik te vergroten, terwijl de originele lokale vragen altijd gemonitord worden om te controleren of de fundamenten solide blijven." },
+      { tipo: "paragrafo", testo: "Het FAQPage-schema is de meest directe verbinding tussen technische structuur en zichtbaarheid op AI-zoekmachines. Het bevat precies wat AI-zoekmachines zoeken: vragen en antwoorden in machineleesbaar formaat. Daarom bouwt AI'm by VNS voor elke klant een set van 10 vragen die samen zijn opgesteld voor de sector en de regio, consequent gebruikt in het FAQPage-schema, de Q&A-sectie op de website en de blog. Naarmate resultaten consolideren, worden de vragen bijgewerkt om het bereik te vergroten, terwijl de originele lokale vragen altijd gemonitord worden om te controleren of de fundamenten solide blijven." },
       { tipo: "link", testo: "mailto:info@aim-vns.com", etichetta: "Vraag een gratis schema.org-analyse aan" },
     ],
     attivo: true,

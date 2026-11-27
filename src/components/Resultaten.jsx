@@ -13,7 +13,7 @@ const cases = [
       { motore: 'Perplexity', before: 0, after: 4.3 },
       { motore: 'Gemini', before: 0, after: 3.2 },
     ],
-    nota: 'Analyse april 2026 — volgend rapport juli 2026',
+    nota: 'Analyse april 2026, volgend rapport juli 2026',
   },
   {
     nome: 'RAB Romagna',
@@ -26,7 +26,7 @@ const cases = [
       { motore: 'SEO', before: 0, after: 7.2 },
       { motore: 'GEO', before: 0, after: 7.8 },
     ],
-    nota: 'Analyse april 2026 — systeem gevalideerd voor lancering',
+    nota: 'Analyse april 2026, systeem gevalideerd voor lancering',
   },
 ]
 
